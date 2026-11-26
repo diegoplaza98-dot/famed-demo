@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173f35">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<meta name="mobile-web-app-capable" content="yes">
+<title>DEMO Productividad FAMED</title>
+<script>
+window.__db={"clinics": [{"id": "c1", "name": "Cl\u00ednica Demo Norte", "address": "x", "active": true}, {"id": "c2", "name": "Cl\u00ednica Demo Sur", "address": "y", "active": true}, {"id": "c4", "name": "Cl\u00ednica Demo Nueva", "address": "w", "active": true}], "employees": [{"id": "e0", "full_name": "Ana Demo", "active": true}, {"id": "e1", "full_name": "Luis Prueba", "active": true}, {"id": "e2", "full_name": "Marta Ficticia", "active": true}, {"id": "e3", "full_name": "Pablo Test", "active": true}, {"id": "e4", "full_name": "Eva Muestra", "active": true}, {"id": "e5", "full_name": "Hugo Dummy", "active": true}], "monthly_records": [{"id": "r1", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2025, "month": 1, "therapy_production": 2608, "group_classes_production": 177, "objective": 3500, "hours_worked": 105, "created_at": "2026-01-01"}, {"id": "r2", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2025, "month": 1, "therapy_production": 3052, "group_classes_production": 124, "objective": 3500, "hours_worked": 84, "created_at": "2026-01-01"}, {"id": "r3", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2025, "month": 1, "therapy_production": 2993, "group_classes_production": 148, "objective": 3500, "hours_worked": 103, "created_at": "2026-01-01"}, {"id": "r4", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2025, "month": 1, "therapy_production": 2853, "group_classes_production": 129, "objective": 3500, "hours_worked": 138, "created_at": "2026-01-01"}, {"id": "r5", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2025, "month": 1, "therapy_production": 2746, "group_classes_production": 209, "objective": 3500, "hours_worked": 82, "created_at": "2026-01-01"}, {"id": "r6", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2025, "month": 1, "therapy_production": 2487, "group_classes_production": 322, "objective": 3500, "hours_worked": 106, "created_at": "2026-01-01"}, {"id": "r7", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2025, "month": 1, "therapy_production": 2754, "group_classes_production": 223, "objective": 3500, "hours_worked": 85, "created_at": "2026-01-01"}, {"id": "r8", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2025, "month": 1, "therapy_production": 3001, "group_classes_production": 317, "objective": 3500, "hours_worked": 83, "created_at": "2026-01-01"}, {"id": "r9", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2025, "month": 1, "therapy_production": 2844, "group_classes_production": 163, "objective": 3500, "hours_worked": 140, "created_at": "2026-01-01"}, {"id": "r10", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2025, "month": 1, "therapy_production": 2601, "group_classes_production": 422, "objective": 3500, "hours_worked": 120, "created_at": "2026-01-01"}, {"id": "r11", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2025, "month": 2, "therapy_production": 2850, "group_classes_production": 131, "objective": 3500, "hours_worked": 116, "created_at": "2026-01-01"}, {"id": "r12", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2025, "month": 2, "therapy_production": 2991, "group_classes_production": 303, "objective": 3500, "hours_worked": 83, "created_at": "2026-01-01"}, {"id": "r13", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2025, "month": 2, "therapy_production": 2695, "group_classes_production": 123, "objective": 3500, "hours_worked": 115, "created_at": "2026-01-01"}, {"id": "r14", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2025, "month": 2, "therapy_production": 2501, "group_classes_production": 248, "objective": 3500, "hours_worked": 106, "created_at": "2026-01-01"}, {"id": "r15", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2025, "month": 2, "therapy_production": 2566, "group_classes_production": 376, "objective": 3500, "hours_worked": 87, "created_at": "2026-01-01"}, {"id": "r16", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2025, "month": 2, "therapy_production": 2844, "group_classes_production": 257, "objective": 3500, "hours_worked": 115, "created_at": "2026-01-01"}, {"id": "r17", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2025, "month": 2, "therapy_production": 3041, "group_classes_production": 192, "objective": 3500, "hours_worked": 86, "created_at": "2026-01-01"}, {"id": "r18", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2025, "month": 2, "therapy_production": 2879, "group_classes_production": 392, "objective": 3500, "hours_worked": 120, "created_at": "2026-01-01"}, {"id": "r19", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2025, "month": 2, "therapy_production": 2529, "group_classes_production": 290, "objective": 3500, "hours_worked": 86, "created_at": "2026-01-01"}, {"id": "r20", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2025, "month": 2, "therapy_production": 2773, "group_classes_production": 464, "objective": 3500, "hours_worked": 84, "created_at": "2026-01-01"}, {"id": "r21", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2025, "month": 3, "therapy_production": 2887, "group_classes_production": 130, "objective": 3500, "hours_worked": 119, "created_at": "2026-01-01"}, {"id": "r22", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2025, "month": 3, "therapy_production": 2704, "group_classes_production": 354, "objective": 3500, "hours_worked": 123, "created_at": "2026-01-01"}, {"id": "r23", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2025, "month": 3, "therapy_production": 2707, "group_classes_production": 318, "objective": 3500, "hours_worked": 129, "created_at": "2026-01-01"}, {"id": "r24", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2025, "month": 3, "therapy_production": 2527, "group_classes_production": 338, "objective": 3500, "hours_worked": 117, "created_at": "2026-01-01"}, {"id": "r25", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2025, "month": 3, "therapy_production": 2801, "group_classes_production": 285, "objective": 3500, "hours_worked": 99, "created_at": "2026-01-01"}, {"id": "r26", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2025, "month": 3, "therapy_production": 2726, "group_classes_production": 192, "objective": 3500, "hours_worked": 124, "created_at": "2026-01-01"}, {"id": "r27", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2025, "month": 3, "therapy_production": 2998, "group_classes_production": 224, "objective": 3500, "hours_worked": 85, "created_at": "2026-01-01"}, {"id": "r28", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2025, "month": 3, "therapy_production": 2729, "group_classes_production": 253, "objective": 3500, "hours_worked": 113, "created_at": "2026-01-01"}, {"id": "r29", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2025, "month": 3, "therapy_production": 2620, "group_classes_production": 275, "objective": 3500, "hours_worked": 126, "created_at": "2026-01-01"}, {"id": "r30", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2025, "month": 3, "therapy_production": 2798, "group_classes_production": 247, "objective": 3500, "hours_worked": 118, "created_at": "2026-01-01"}, {"id": "r31", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2025, "month": 4, "therapy_production": 2609, "group_classes_production": 160, "objective": 3500, "hours_worked": 112, "created_at": "2026-01-01"}, {"id": "r32", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2025, "month": 4, "therapy_production": 2676, "group_classes_production": 184, "objective": 3500, "hours_worked": 128, "created_at": "2026-01-01"}, {"id": "r33", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2025, "month": 4, "therapy_production": 2488, "group_classes_production": 177, "objective": 3500, "hours_worked": 139, "created_at": "2026-01-01"}, {"id": "r34", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2025, "month": 4, "therapy_production": 2623, "group_classes_production": 315, "objective": 3500, "hours_worked": 82, "created_at": "2026-01-01"}, {"id": "r35", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2025, "month": 4, "therapy_production": 3039, "group_classes_production": 139, "objective": 3500, "hours_worked": 128, "created_at": "2026-01-01"}, {"id": "r36", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2025, "month": 4, "therapy_production": 2857, "group_classes_production": 393, "objective": 3500, "hours_worked": 130, "created_at": "2026-01-01"}, {"id": "r37", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2025, "month": 4, "therapy_production": 2622, "group_classes_production": 274, "objective": 3500, "hours_worked": 124, "created_at": "2026-01-01"}, {"id": "r38", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2025, "month": 4, "therapy_production": 2492, "group_classes_production": 404, "objective": 3500, "hours_worked": 111, "created_at": "2026-01-01"}, {"id": "r39", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2025, "month": 4, "therapy_production": 2669, "group_classes_production": 333, "objective": 3500, "hours_worked": 84, "created_at": "2026-01-01"}, {"id": "r40", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2025, "month": 4, "therapy_production": 2744, "group_classes_production": 238, "objective": 3500, "hours_worked": 110, "created_at": "2026-01-01"}, {"id": "r41", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2025, "month": 5, "therapy_production": 2835, "group_classes_production": 440, "objective": 3500, "hours_worked": 84, "created_at": "2026-01-01"}, {"id": "r42", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2025, "month": 5, "therapy_production": 2346, "group_classes_production": 474, "objective": 3500, "hours_worked": 124, "created_at": "2026-01-01"}, {"id": "r43", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2025, "month": 5, "therapy_production": 2405, "group_classes_production": 431, "objective": 3500, "hours_worked": 116, "created_at": "2026-01-01"}, {"id": "r44", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2025, "month": 5, "therapy_production": 2797, "group_classes_production": 328, "objective": 3500, "hours_worked": 98, "created_at": "2026-01-01"}, {"id": "r45", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2025, "month": 5, "therapy_production": 3210, "group_classes_production": 297, "objective": 3500, "hours_worked": 136, "created_at": "2026-01-01"}, {"id": "r46", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2025, "month": 5, "therapy_production": 2821, "group_classes_production": 277, "objective": 3500, "hours_worked": 81, "created_at": "2026-01-01"}, {"id": "r47", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2025, "month": 5, "therapy_production": 2551, "group_classes_production": 281, "objective": 3500, "hours_worked": 90, "created_at": "2026-01-01"}, {"id": "r48", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2025, "month": 5, "therapy_production": 2559, "group_classes_production": 159, "objective": 3500, "hours_worked": 111, "created_at": "2026-01-01"}, {"id": "r49", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2025, "month": 5, "therapy_production": 2479, "group_classes_production": 211, "objective": 3500, "hours_worked": 129, "created_at": "2026-01-01"}, {"id": "r50", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2025, "month": 5, "therapy_production": 2991, "group_classes_production": 166, "objective": 3500, "hours_worked": 127, "created_at": "2026-01-01"}, {"id": "r51", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2025, "month": 6, "therapy_production": 2468, "group_classes_production": 303, "objective": 3500, "hours_worked": 105, "created_at": "2026-01-01"}, {"id": "r52", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2025, "month": 6, "therapy_production": 2447, "group_classes_production": 141, "objective": 3500, "hours_worked": 90, "created_at": "2026-01-01"}, {"id": "r53", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2025, "month": 6, "therapy_production": 2482, "group_classes_production": 305, "objective": 3500, "hours_worked": 115, "created_at": "2026-01-01"}, {"id": "r54", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2025, "month": 6, "therapy_production": 2719, "group_classes_production": 170, "objective": 3500, "hours_worked": 132, "created_at": "2026-01-01"}, {"id": "r55", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2025, "month": 6, "therapy_production": 3197, "group_classes_production": 381, "objective": 3500, "hours_worked": 97, "created_at": "2026-01-01"}, {"id": "r56", "owner_id": "u", "clinic_id": "c1", "employee_id": "e5", "year": 2025, "month": 6, "therapy_production": 3557, "group_classes_production": 312, "objective": 3500, "hours_worked": 102, "created_at": "2026-01-01"}, {"id": "r57", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2025, "month": 6, "therapy_production": 2691, "group_classes_production": 294, "objective": 3500, "hours_worked": 94, "created_at": "2026-01-01"}, {"id": "r58", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2025, "month": 6, "therapy_production": 2270, "group_classes_production": 142, "objective": 3500, "hours_worked": 91, "created_at": "2026-01-01"}, {"id": "r59", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2025, "month": 6, "therapy_production": 2330, "group_classes_production": 218, "objective": 3500, "hours_worked": 122, "created_at": "2026-01-01"}, {"id": "r60", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2025, "month": 6, "therapy_production": 2696, "group_classes_production": 106, "objective": 3500, "hours_worked": 111, "created_at": "2026-01-01"}, {"id": "r61", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2025, "month": 6, "therapy_production": 3278, "group_classes_production": 193, "objective": 3500, "hours_worked": 96, "created_at": "2026-01-01"}, {"id": "r62", "owner_id": "u", "clinic_id": "c2", "employee_id": "e5", "year": 2025, "month": 6, "therapy_production": 3340, "group_classes_production": 102, "objective": 3500, "hours_worked": 89, "created_at": "2026-01-01"}, {"id": "r63", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2025, "month": 7, "therapy_production": 2409, "group_classes_production": 373, "objective": 3500, "hours_worked": 103, "created_at": "2026-01-01"}, {"id": "r64", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2025, "month": 7, "therapy_production": 2439, "group_classes_production": 389, "objective": 3500, "hours_worked": 100, "created_at": "2026-01-01"}, {"id": "r65", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2025, "month": 7, "therapy_production": 2393, "group_classes_production": 453, "objective": 3500, "hours_worked": 134, "created_at": "2026-01-01"}, {"id": "r66", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2025, "month": 7, "therapy_production": 2987, "group_classes_production": 416, "objective": 3500, "hours_worked": 121, "created_at": "2026-01-01"}, {"id": "r67", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2025, "month": 7, "therapy_production": 3407, "group_classes_production": 478, "objective": 3500, "hours_worked": 83, "created_at": "2026-01-01"}, {"id": "r68", "owner_id": "u", "clinic_id": "c1", "employee_id": "e5", "year": 2025, "month": 7, "therapy_production": 3372, "group_classes_production": 499, "objective": 3500, "hours_worked": 140, "created_at": "2026-01-01"}, {"id": "r69", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2025, "month": 7, "therapy_production": 2543, "group_classes_production": 386, "objective": 3500, "hours_worked": 105, "created_at": "2026-01-01"}, {"id": "r70", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2025, "month": 7, "therapy_production": 2330, "group_classes_production": 304, "objective": 3500, "hours_worked": 105, "created_at": "2026-01-01"}, {"id": "r71", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2025, "month": 7, "therapy_production": 2382, "group_classes_production": 346, "objective": 3500, "hours_worked": 120, "created_at": "2026-01-01"}, {"id": "r72", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2025, "month": 7, "therapy_production": 2929, "group_classes_production": 131, "objective": 3500, "hours_worked": 92, "created_at": "2026-01-01"}, {"id": "r73", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2025, "month": 7, "therapy_production": 3095, "group_classes_production": 206, "objective": 3500, "hours_worked": 108, "created_at": "2026-01-01"}, {"id": "r74", "owner_id": "u", "clinic_id": "c2", "employee_id": "e5", "year": 2025, "month": 7, "therapy_production": 3222, "group_classes_production": 156, "objective": 3500, "hours_worked": 101, "created_at": "2026-01-01"}, {"id": "r75", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2025, "month": 8, "therapy_production": 2380, "group_classes_production": 126, "objective": 3500, "hours_worked": 86, "created_at": "2026-01-01"}, {"id": "r76", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2025, "month": 8, "therapy_production": 2133, "group_classes_production": 390, "objective": 3500, "hours_worked": 89, "created_at": "2026-01-01"}, {"id": "r77", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2025, "month": 8, "therapy_production": 2731, "group_classes_production": 151, "objective": 3500, "hours_worked": 140, "created_at": "2026-01-01"}, {"id": "r78", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2025, "month": 8, "therapy_production": 3043, "group_classes_production": 414, "objective": 3500, "hours_worked": 81, "created_at": "2026-01-01"}, {"id": "r79", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2025, "month": 8, "therapy_production": 3112, "group_classes_production": 206, "objective": 3500, "hours_worked": 119, "created_at": "2026-01-01"}, {"id": "r80", "owner_id": "u", "clinic_id": "c1", "employee_id": "e5", "year": 2025, "month": 8, "therapy_production": 3215, "group_classes_production": 176, "objective": 3500, "hours_worked": 120, "created_at": "2026-01-01"}, {"id": "r81", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2025, "month": 8, "therapy_production": 2202, "group_classes_production": 277, "objective": 3500, "hours_worked": 118, "created_at": "2026-01-01"}, {"id": "r82", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2025, "month": 8, "therapy_production": 2319, "group_classes_production": 342, "objective": 3500, "hours_worked": 87, "created_at": "2026-01-01"}, {"id": "r83", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2025, "month": 8, "therapy_production": 2516, "group_classes_production": 349, "objective": 3500, "hours_worked": 109, "created_at": "2026-01-01"}, {"id": "r84", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2025, "month": 8, "therapy_production": 3102, "group_classes_production": 347, "objective": 3500, "hours_worked": 99, "created_at": "2026-01-01"}, {"id": "r85", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2025, "month": 8, "therapy_production": 3119, "group_classes_production": 173, "objective": 3500, "hours_worked": 86, "created_at": "2026-01-01"}, {"id": "r86", "owner_id": "u", "clinic_id": "c2", "employee_id": "e5", "year": 2025, "month": 8, "therapy_production": 3406, "group_classes_production": 275, "objective": 3500, "hours_worked": 127, "created_at": "2026-01-01"}, {"id": "r87", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2025, "month": 9, "therapy_production": 2142, "group_classes_production": 345, "objective": 3500, "hours_worked": 133, "created_at": "2026-01-01"}, {"id": "r88", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2025, "month": 9, "therapy_production": 2563, "group_classes_production": 182, "objective": 3500, "hours_worked": 113, "created_at": "2026-01-01"}, {"id": "r89", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2025, "month": 9, "therapy_production": 2615, "group_classes_production": 205, "objective": 3500, "hours_worked": 140, "created_at": "2026-01-01"}, {"id": "r90", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2025, "month": 9, "therapy_production": 3211, "group_classes_production": 285, "objective": 3500, "hours_worked": 89, "created_at": "2026-01-01"}, {"id": "r91", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2025, "month": 9, "therapy_production": 3372, "group_classes_production": 378, "objective": 3500, "hours_worked": 138, "created_at": "2026-01-01"}, {"id": "r92", "owner_id": "u", "clinic_id": "c1", "employee_id": "e5", "year": 2025, "month": 9, "therapy_production": 2891, "group_classes_production": 488, "objective": 3500, "hours_worked": 113, "created_at": "2026-01-01"}, {"id": "r93", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2025, "month": 9, "therapy_production": 2159, "group_classes_production": 429, "objective": 3500, "hours_worked": 135, "created_at": "2026-01-01"}, {"id": "r94", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2025, "month": 9, "therapy_production": 2255, "group_classes_production": 456, "objective": 3500, "hours_worked": 134, "created_at": "2026-01-01"}, {"id": "r95", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2025, "month": 9, "therapy_production": 2737, "group_classes_production": 365, "objective": 3500, "hours_worked": 103, "created_at": "2026-01-01"}, {"id": "r96", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2025, "month": 9, "therapy_production": 3026, "group_classes_production": 282, "objective": 3500, "hours_worked": 129, "created_at": "2026-01-01"}, {"id": "r97", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2025, "month": 9, "therapy_production": 3133, "group_classes_production": 372, "objective": 3500, "hours_worked": 114, "created_at": "2026-01-01"}, {"id": "r98", "owner_id": "u", "clinic_id": "c2", "employee_id": "e5", "year": 2025, "month": 9, "therapy_production": 3276, "group_classes_production": 357, "objective": 3500, "hours_worked": 101, "created_at": "2026-01-01"}, {"id": "r99", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2025, "month": 10, "therapy_production": 2338, "group_classes_production": 214, "objective": 3500, "hours_worked": 119, "created_at": "2026-01-01"}, {"id": "r100", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2025, "month": 10, "therapy_production": 2725, "group_classes_production": 199, "objective": 3500, "hours_worked": 131, "created_at": "2026-01-01"}, {"id": "r101", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2025, "month": 10, "therapy_production": 2859, "group_classes_production": 305, "objective": 3500, "hours_worked": 127, "created_at": "2026-01-01"}, {"id": "r102", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2025, "month": 10, "therapy_production": 3072, "group_classes_production": 202, "objective": 3500, "hours_worked": 113, "created_at": "2026-01-01"}, {"id": "r103", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2025, "month": 10, "therapy_production": 3155, "group_classes_production": 282, "objective": 3500, "hours_worked": 126, "created_at": "2026-01-01"}, {"id": "r104", "owner_id": "u", "clinic_id": "c1", "employee_id": "e5", "year": 2025, "month": 10, "therapy_production": 2751, "group_classes_production": 114, "objective": 3500, "hours_worked": 130, "created_at": "2026-01-01"}, {"id": "r105", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2025, "month": 10, "therapy_production": 2156, "group_classes_production": 341, "objective": 3500, "hours_worked": 96, "created_at": "2026-01-01"}, {"id": "r106", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2025, "month": 10, "therapy_production": 2436, "group_classes_production": 454, "objective": 3500, "hours_worked": 118, "created_at": "2026-01-01"}, {"id": "r107", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2025, "month": 10, "therapy_production": 2913, "group_classes_production": 328, "objective": 3500, "hours_worked": 131, "created_at": "2026-01-01"}, {"id": "r108", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2025, "month": 10, "therapy_production": 3326, "group_classes_production": 278, "objective": 3500, "hours_worked": 103, "created_at": "2026-01-01"}, {"id": "r109", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2025, "month": 10, "therapy_production": 2944, "group_classes_production": 212, "objective": 3500, "hours_worked": 86, "created_at": "2026-01-01"}, {"id": "r110", "owner_id": "u", "clinic_id": "c2", "employee_id": "e5", "year": 2025, "month": 10, "therapy_production": 2853, "group_classes_production": 340, "objective": 3500, "hours_worked": 92, "created_at": "2026-01-01"}, {"id": "r111", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2025, "month": 11, "therapy_production": 2261, "group_classes_production": 204, "objective": 3500, "hours_worked": 110, "created_at": "2026-01-01"}, {"id": "r112", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2025, "month": 11, "therapy_production": 2803, "group_classes_production": 412, "objective": 3500, "hours_worked": 133, "created_at": "2026-01-01"}, {"id": "r113", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2025, "month": 11, "therapy_production": 2821, "group_classes_production": 345, "objective": 3500, "hours_worked": 138, "created_at": "2026-01-01"}, {"id": "r114", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2025, "month": 11, "therapy_production": 3233, "group_classes_production": 276, "objective": 3500, "hours_worked": 131, "created_at": "2026-01-01"}, {"id": "r115", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2025, "month": 11, "therapy_production": 3087, "group_classes_production": 143, "objective": 3500, "hours_worked": 133, "created_at": "2026-01-01"}, {"id": "r116", "owner_id": "u", "clinic_id": "c1", "employee_id": "e5", "year": 2025, "month": 11, "therapy_production": 2975, "group_classes_production": 161, "objective": 3500, "hours_worked": 138, "created_at": "2026-01-01"}, {"id": "r117", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2025, "month": 11, "therapy_production": 2287, "group_classes_production": 500, "objective": 3500, "hours_worked": 125, "created_at": "2026-01-01"}, {"id": "r118", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2025, "month": 11, "therapy_production": 2868, "group_classes_production": 202, "objective": 3500, "hours_worked": 110, "created_at": "2026-01-01"}, {"id": "r119", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2025, "month": 11, "therapy_production": 2912, "group_classes_production": 322, "objective": 3500, "hours_worked": 130, "created_at": "2026-01-01"}, {"id": "r120", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2025, "month": 11, "therapy_production": 3224, "group_classes_production": 270, "objective": 3500, "hours_worked": 85, "created_at": "2026-01-01"}, {"id": "r121", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2025, "month": 11, "therapy_production": 3127, "group_classes_production": 302, "objective": 3500, "hours_worked": 109, "created_at": "2026-01-01"}, {"id": "r122", "owner_id": "u", "clinic_id": "c2", "employee_id": "e5", "year": 2025, "month": 11, "therapy_production": 2842, "group_classes_production": 480, "objective": 3500, "hours_worked": 140, "created_at": "2026-01-01"}, {"id": "r123", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2025, "month": 12, "therapy_production": 2260, "group_classes_production": 471, "objective": 3500, "hours_worked": 90, "created_at": "2026-01-01"}, {"id": "r124", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2025, "month": 12, "therapy_production": 2704, "group_classes_production": 165, "objective": 3500, "hours_worked": 81, "created_at": "2026-01-01"}, {"id": "r125", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2025, "month": 12, "therapy_production": 2913, "group_classes_production": 402, "objective": 3500, "hours_worked": 137, "created_at": "2026-01-01"}, {"id": "r126", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2025, "month": 12, "therapy_production": 3021, "group_classes_production": 435, "objective": 3500, "hours_worked": 89, "created_at": "2026-01-01"}, {"id": "r127", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2025, "month": 12, "therapy_production": 2930, "group_classes_production": 405, "objective": 3500, "hours_worked": 110, "created_at": "2026-01-01"}, {"id": "r128", "owner_id": "u", "clinic_id": "c1", "employee_id": "e5", "year": 2025, "month": 12, "therapy_production": 2937, "group_classes_production": 279, "objective": 3500, "hours_worked": 89, "created_at": "2026-01-01"}, {"id": "r129", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2025, "month": 12, "therapy_production": 2497, "group_classes_production": 380, "objective": 3500, "hours_worked": 88, "created_at": "2026-01-01"}, {"id": "r130", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2025, "month": 12, "therapy_production": 2627, "group_classes_production": 107, "objective": 3500, "hours_worked": 131, "created_at": "2026-01-01"}, {"id": "r131", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2025, "month": 12, "therapy_production": 3207, "group_classes_production": 432, "objective": 3500, "hours_worked": 86, "created_at": "2026-01-01"}, {"id": "r132", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2025, "month": 12, "therapy_production": 3052, "group_classes_production": 483, "objective": 3500, "hours_worked": 139, "created_at": "2026-01-01"}, {"id": "r133", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2025, "month": 12, "therapy_production": 2688, "group_classes_production": 322, "objective": 3500, "hours_worked": 135, "created_at": "2026-01-01"}, {"id": "r134", "owner_id": "u", "clinic_id": "c2", "employee_id": "e5", "year": 2025, "month": 12, "therapy_production": 2700, "group_classes_production": 208, "objective": 3500, "hours_worked": 81, "created_at": "2026-01-01"}, {"id": "r135", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2026, "month": 1, "therapy_production": 2821, "group_classes_production": 208, "objective": 3500, "hours_worked": 98, "created_at": "2026-01-01"}, {"id": "r136", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2026, "month": 1, "therapy_production": 3225, "group_classes_production": 223, "objective": 3500, "hours_worked": 128, "created_at": "2026-01-01"}, {"id": "r137", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2026, "month": 1, "therapy_production": 3269, "group_classes_production": 266, "objective": 3500, "hours_worked": 96, "created_at": "2026-01-01"}, {"id": "r138", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2026, "month": 1, "therapy_production": 3083, "group_classes_production": 314, "objective": 3500, "hours_worked": 133, "created_at": "2026-01-01"}, {"id": "r139", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2026, "month": 1, "therapy_production": 2804, "group_classes_production": 131, "objective": 3500, "hours_worked": 138, "created_at": "2026-01-01"}, {"id": "r140", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2026, "month": 1, "therapy_production": 3071, "group_classes_production": 281, "objective": 3500, "hours_worked": 137, "created_at": "2026-01-01"}, {"id": "r141", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2026, "month": 1, "therapy_production": 3203, "group_classes_production": 439, "objective": 3500, "hours_worked": 117, "created_at": "2026-01-01"}, {"id": "r142", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2026, "month": 1, "therapy_production": 3233, "group_classes_production": 315, "objective": 3500, "hours_worked": 132, "created_at": "2026-01-01"}, {"id": "r143", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2026, "month": 1, "therapy_production": 3061, "group_classes_production": 166, "objective": 3500, "hours_worked": 114, "created_at": "2026-01-01"}, {"id": "r144", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2026, "month": 1, "therapy_production": 2814, "group_classes_production": 368, "objective": 3500, "hours_worked": 112, "created_at": "2026-01-01"}, {"id": "r145", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2026, "month": 2, "therapy_production": 2811, "group_classes_production": 325, "objective": 3500, "hours_worked": 129, "created_at": "2026-01-01"}, {"id": "r146", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2026, "month": 2, "therapy_production": 3035, "group_classes_production": 411, "objective": 3500, "hours_worked": 80, "created_at": "2026-01-01"}, {"id": "r147", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2026, "month": 2, "therapy_production": 3229, "group_classes_production": 176, "objective": 3500, "hours_worked": 91, "created_at": "2026-01-01"}, {"id": "r148", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2026, "month": 2, "therapy_production": 2755, "group_classes_production": 342, "objective": 3500, "hours_worked": 119, "created_at": "2026-01-01"}, {"id": "r149", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2026, "month": 2, "therapy_production": 3114, "group_classes_production": 161, "objective": 3500, "hours_worked": 115, "created_at": "2026-01-01"}, {"id": "r150", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2026, "month": 2, "therapy_production": 2833, "group_classes_production": 266, "objective": 3500, "hours_worked": 123, "created_at": "2026-01-01"}, {"id": "r151", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2026, "month": 2, "therapy_production": 3207, "group_classes_production": 371, "objective": 3500, "hours_worked": 115, "created_at": "2026-01-01"}, {"id": "r152", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2026, "month": 2, "therapy_production": 3079, "group_classes_production": 497, "objective": 3500, "hours_worked": 86, "created_at": "2026-01-01"}, {"id": "r153", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2026, "month": 2, "therapy_production": 2969, "group_classes_production": 129, "objective": 3500, "hours_worked": 95, "created_at": "2026-01-01"}, {"id": "r154", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2026, "month": 2, "therapy_production": 2840, "group_classes_production": 241, "objective": 3500, "hours_worked": 82, "created_at": "2026-01-01"}, {"id": "r155", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2026, "month": 3, "therapy_production": 3244, "group_classes_production": 150, "objective": 3500, "hours_worked": 112, "created_at": "2026-01-01"}, {"id": "r156", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2026, "month": 3, "therapy_production": 3080, "group_classes_production": 387, "objective": 3500, "hours_worked": 81, "created_at": "2026-01-01"}, {"id": "r157", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2026, "month": 3, "therapy_production": 3074, "group_classes_production": 132, "objective": 3500, "hours_worked": 108, "created_at": "2026-01-01"}, {"id": "r158", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2026, "month": 3, "therapy_production": 2783, "group_classes_production": 413, "objective": 3500, "hours_worked": 112, "created_at": "2026-01-01"}, {"id": "r159", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2026, "month": 3, "therapy_production": 3129, "group_classes_production": 362, "objective": 3500, "hours_worked": 92, "created_at": "2026-01-01"}, {"id": "r160", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2026, "month": 3, "therapy_production": 3203, "group_classes_production": 241, "objective": 3500, "hours_worked": 108, "created_at": "2026-01-01"}, {"id": "r161", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2026, "month": 3, "therapy_production": 3109, "group_classes_production": 373, "objective": 3500, "hours_worked": 131, "created_at": "2026-01-01"}, {"id": "r162", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2026, "month": 3, "therapy_production": 2929, "group_classes_production": 359, "objective": 3500, "hours_worked": 140, "created_at": "2026-01-01"}, {"id": "r163", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2026, "month": 3, "therapy_production": 2743, "group_classes_production": 457, "objective": 3500, "hours_worked": 113, "created_at": "2026-01-01"}, {"id": "r164", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2026, "month": 3, "therapy_production": 2951, "group_classes_production": 386, "objective": 3500, "hours_worked": 137, "created_at": "2026-01-01"}, {"id": "r165", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2026, "month": 4, "therapy_production": 2925, "group_classes_production": 329, "objective": 3500, "hours_worked": 88, "created_at": "2026-01-01"}, {"id": "r166", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2026, "month": 4, "therapy_production": 2925, "group_classes_production": 162, "objective": 3500, "hours_worked": 105, "created_at": "2026-01-01"}, {"id": "r167", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2026, "month": 4, "therapy_production": 2789, "group_classes_production": 261, "objective": 3500, "hours_worked": 84, "created_at": "2026-01-01"}, {"id": "r168", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2026, "month": 4, "therapy_production": 2966, "group_classes_production": 223, "objective": 3500, "hours_worked": 107, "created_at": "2026-01-01"}, {"id": "r169", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2026, "month": 4, "therapy_production": 2984, "group_classes_production": 208, "objective": 3500, "hours_worked": 122, "created_at": "2026-01-01"}, {"id": "r170", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2026, "month": 4, "therapy_production": 2977, "group_classes_production": 162, "objective": 3500, "hours_worked": 137, "created_at": "2026-01-01"}, {"id": "r171", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2026, "month": 4, "therapy_production": 3109, "group_classes_production": 179, "objective": 3500, "hours_worked": 140, "created_at": "2026-01-01"}, {"id": "r172", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2026, "month": 4, "therapy_production": 2929, "group_classes_production": 429, "objective": 3500, "hours_worked": 122, "created_at": "2026-01-01"}, {"id": "r173", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2026, "month": 4, "therapy_production": 2810, "group_classes_production": 173, "objective": 3500, "hours_worked": 96, "created_at": "2026-01-01"}, {"id": "r174", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2026, "month": 4, "therapy_production": 3017, "group_classes_production": 339, "objective": 3500, "hours_worked": 94, "created_at": "2026-01-01"}, {"id": "r175", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2026, "month": 5, "therapy_production": 3111, "group_classes_production": 148, "objective": 3500, "hours_worked": 105, "created_at": "2026-01-01"}, {"id": "r176", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2026, "month": 5, "therapy_production": 2814, "group_classes_production": 183, "objective": 3500, "hours_worked": 122, "created_at": "2026-01-01"}, {"id": "r177", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2026, "month": 5, "therapy_production": 2611, "group_classes_production": 182, "objective": 3500, "hours_worked": 125, "created_at": "2026-01-01"}, {"id": "r178", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2026, "month": 5, "therapy_production": 2919, "group_classes_production": 363, "objective": 3500, "hours_worked": 105, "created_at": "2026-01-01"}, {"id": "r179", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2026, "month": 5, "therapy_production": 3267, "group_classes_production": 315, "objective": 3500, "hours_worked": 92, "created_at": "2026-01-01"}, {"id": "r180", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2026, "month": 5, "therapy_production": 2911, "group_classes_production": 263, "objective": 3500, "hours_worked": 85, "created_at": "2026-01-01"}, {"id": "r181", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2026, "month": 5, "therapy_production": 2934, "group_classes_production": 287, "objective": 3500, "hours_worked": 81, "created_at": "2026-01-01"}, {"id": "r182", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2026, "month": 5, "therapy_production": 2670, "group_classes_production": 383, "objective": 3500, "hours_worked": 109, "created_at": "2026-01-01"}, {"id": "r183", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2026, "month": 5, "therapy_production": 2924, "group_classes_production": 460, "objective": 3500, "hours_worked": 81, "created_at": "2026-01-01"}, {"id": "r184", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2026, "month": 5, "therapy_production": 3290, "group_classes_production": 269, "objective": 3500, "hours_worked": 113, "created_at": "2026-01-01"}, {"id": "r185", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2026, "month": 6, "therapy_production": 2911, "group_classes_production": 251, "objective": 3500, "hours_worked": 112, "created_at": "2026-01-01"}, {"id": "r186", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2026, "month": 6, "therapy_production": 2475, "group_classes_production": 157, "objective": 3500, "hours_worked": 138, "created_at": "2026-01-01"}, {"id": "r187", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2026, "month": 6, "therapy_production": 2620, "group_classes_production": 153, "objective": 3500, "hours_worked": 85, "created_at": "2026-01-01"}, {"id": "r188", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2026, "month": 6, "therapy_production": 2962, "group_classes_production": 239, "objective": 3500, "hours_worked": 82, "created_at": "2026-01-01"}, {"id": "r189", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2026, "month": 6, "therapy_production": 3625, "group_classes_production": 192, "objective": 3500, "hours_worked": 97, "created_at": "2026-01-01"}, {"id": "r190", "owner_id": "u", "clinic_id": "c1", "employee_id": "e5", "year": 2026, "month": 6, "therapy_production": 3832, "group_classes_production": 166, "objective": 3500, "hours_worked": 132, "created_at": "2026-01-01"}, {"id": "r191", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2026, "month": 6, "therapy_production": 2808, "group_classes_production": 446, "objective": 3500, "hours_worked": 132, "created_at": "2026-01-01"}, {"id": "r192", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2026, "month": 6, "therapy_production": 2575, "group_classes_production": 307, "objective": 3500, "hours_worked": 89, "created_at": "2026-01-01"}, {"id": "r193", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2026, "month": 6, "therapy_production": 2777, "group_classes_production": 363, "objective": 3500, "hours_worked": 116, "created_at": "2026-01-01"}, {"id": "r194", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2026, "month": 6, "therapy_production": 3080, "group_classes_production": 458, "objective": 3500, "hours_worked": 100, "created_at": "2026-01-01"}, {"id": "r195", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2026, "month": 6, "therapy_production": 3272, "group_classes_production": 242, "objective": 3500, "hours_worked": 83, "created_at": "2026-01-01"}, {"id": "r196", "owner_id": "u", "clinic_id": "c2", "employee_id": "e5", "year": 2026, "month": 6, "therapy_production": 3798, "group_classes_production": 193, "objective": 3500, "hours_worked": 107, "created_at": "2026-01-01"}, {"id": "r197", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2026, "month": 7, "therapy_production": 2482, "group_classes_production": 237, "objective": 3500, "hours_worked": 140, "created_at": "2026-01-01"}, {"id": "r198", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2026, "month": 7, "therapy_production": 2385, "group_classes_production": 424, "objective": 3500, "hours_worked": 85, "created_at": "2026-01-01"}, {"id": "r199", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2026, "month": 7, "therapy_production": 2712, "group_classes_production": 142, "objective": 3500, "hours_worked": 118, "created_at": "2026-01-01"}, {"id": "r200", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2026, "month": 7, "therapy_production": 3087, "group_classes_production": 134, "objective": 3500, "hours_worked": 96, "created_at": "2026-01-01"}, {"id": "r201", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2026, "month": 7, "therapy_production": 3373, "group_classes_production": 332, "objective": 3500, "hours_worked": 80, "created_at": "2026-01-01"}, {"id": "r202", "owner_id": "u", "clinic_id": "c1", "employee_id": "e5", "year": 2026, "month": 7, "therapy_production": 3562, "group_classes_production": 383, "objective": 3500, "hours_worked": 106, "created_at": "2026-01-01"}, {"id": "r203", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2026, "month": 7, "therapy_production": 2582, "group_classes_production": 418, "objective": 3500, "hours_worked": 88, "created_at": "2026-01-01"}, {"id": "r204", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2026, "month": 7, "therapy_production": 2399, "group_classes_production": 369, "objective": 3500, "hours_worked": 125, "created_at": "2026-01-01"}, {"id": "r205", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2026, "month": 7, "therapy_production": 2701, "group_classes_production": 156, "objective": 3500, "hours_worked": 90, "created_at": "2026-01-01"}, {"id": "r206", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2026, "month": 7, "therapy_production": 3108, "group_classes_production": 125, "objective": 3500, "hours_worked": 91, "created_at": "2026-01-01"}, {"id": "r207", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2026, "month": 7, "therapy_production": 3414, "group_classes_production": 259, "objective": 3500, "hours_worked": 120, "created_at": "2026-01-01"}, {"id": "r208", "owner_id": "u", "clinic_id": "c2", "employee_id": "e5", "year": 2026, "month": 7, "therapy_production": 3545, "group_classes_production": 371, "objective": 3500, "hours_worked": 128, "created_at": "2026-01-01"}, {"id": "r209", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2026, "month": 8, "therapy_production": 2428, "group_classes_production": 248, "objective": 3500, "hours_worked": 108, "created_at": "2026-01-01"}, {"id": "r210", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2026, "month": 8, "therapy_production": 2639, "group_classes_production": 444, "objective": 3500, "hours_worked": 91, "created_at": "2026-01-01"}, {"id": "r211", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2026, "month": 8, "therapy_production": 2845, "group_classes_production": 277, "objective": 3500, "hours_worked": 131, "created_at": "2026-01-01"}, {"id": "r212", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2026, "month": 8, "therapy_production": 3116, "group_classes_production": 228, "objective": 3500, "hours_worked": 82, "created_at": "2026-01-01"}, {"id": "r213", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2026, "month": 8, "therapy_production": 3333, "group_classes_production": 109, "objective": 3500, "hours_worked": 126, "created_at": "2026-01-01"}, {"id": "r214", "owner_id": "u", "clinic_id": "c1", "employee_id": "e5", "year": 2026, "month": 8, "therapy_production": 3531, "group_classes_production": 382, "objective": 3500, "hours_worked": 92, "created_at": "2026-01-01"}, {"id": "r215", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2026, "month": 8, "therapy_production": 2586, "group_classes_production": 343, "objective": 3500, "hours_worked": 95, "created_at": "2026-01-01"}, {"id": "r216", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2026, "month": 8, "therapy_production": 2611, "group_classes_production": 154, "objective": 3500, "hours_worked": 122, "created_at": "2026-01-01"}, {"id": "r217", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2026, "month": 8, "therapy_production": 3039, "group_classes_production": 321, "objective": 3500, "hours_worked": 122, "created_at": "2026-01-01"}, {"id": "r218", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2026, "month": 8, "therapy_production": 3360, "group_classes_production": 379, "objective": 3500, "hours_worked": 133, "created_at": "2026-01-01"}, {"id": "r219", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2026, "month": 8, "therapy_production": 3527, "group_classes_production": 359, "objective": 3500, "hours_worked": 99, "created_at": "2026-01-01"}, {"id": "r220", "owner_id": "u", "clinic_id": "c2", "employee_id": "e5", "year": 2026, "month": 8, "therapy_production": 3625, "group_classes_production": 210, "objective": 3500, "hours_worked": 94, "created_at": "2026-01-01"}, {"id": "r221", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2026, "month": 9, "therapy_production": 2432, "group_classes_production": 201, "objective": 3500, "hours_worked": 133, "created_at": "2026-01-01"}, {"id": "r222", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2026, "month": 9, "therapy_production": 2820, "group_classes_production": 473, "objective": 3500, "hours_worked": 120, "created_at": "2026-01-01"}, {"id": "r223", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2026, "month": 9, "therapy_production": 2925, "group_classes_production": 307, "objective": 3500, "hours_worked": 102, "created_at": "2026-01-01"}, {"id": "r224", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2026, "month": 9, "therapy_production": 3218, "group_classes_production": 166, "objective": 3500, "hours_worked": 80, "created_at": "2026-01-01"}, {"id": "r225", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2026, "month": 9, "therapy_production": 3305, "group_classes_production": 420, "objective": 3500, "hours_worked": 127, "created_at": "2026-01-01"}, {"id": "r226", "owner_id": "u", "clinic_id": "c1", "employee_id": "e5", "year": 2026, "month": 9, "therapy_production": 3258, "group_classes_production": 320, "objective": 3500, "hours_worked": 90, "created_at": "2026-01-01"}, {"id": "r227", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2026, "month": 9, "therapy_production": 2285, "group_classes_production": 143, "objective": 3500, "hours_worked": 122, "created_at": "2026-01-01"}, {"id": "r228", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2026, "month": 9, "therapy_production": 2654, "group_classes_production": 359, "objective": 3500, "hours_worked": 122, "created_at": "2026-01-01"}, {"id": "r229", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2026, "month": 9, "therapy_production": 2998, "group_classes_production": 406, "objective": 3500, "hours_worked": 95, "created_at": "2026-01-01"}, {"id": "r230", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2026, "month": 9, "therapy_production": 3545, "group_classes_production": 250, "objective": 3500, "hours_worked": 82, "created_at": "2026-01-01"}, {"id": "r231", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2026, "month": 9, "therapy_production": 3504, "group_classes_production": 194, "objective": 3500, "hours_worked": 90, "created_at": "2026-01-01"}, {"id": "r232", "owner_id": "u", "clinic_id": "c2", "employee_id": "e5", "year": 2026, "month": 9, "therapy_production": 3265, "group_classes_production": 328, "objective": 3500, "hours_worked": 80, "created_at": "2026-01-01"}, {"id": "r233", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2026, "month": 10, "therapy_production": 2397, "group_classes_production": 286, "objective": 3500, "hours_worked": 101, "created_at": "2026-01-01"}, {"id": "r234", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2026, "month": 10, "therapy_production": 2867, "group_classes_production": 265, "objective": 3500, "hours_worked": 95, "created_at": "2026-01-01"}, {"id": "r235", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2026, "month": 10, "therapy_production": 3004, "group_classes_production": 258, "objective": 3500, "hours_worked": 93, "created_at": "2026-01-01"}, {"id": "r236", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2026, "month": 10, "therapy_production": 3388, "group_classes_production": 193, "objective": 3500, "hours_worked": 80, "created_at": "2026-01-01"}, {"id": "r237", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2026, "month": 10, "therapy_production": 3324, "group_classes_production": 295, "objective": 3500, "hours_worked": 85, "created_at": "2026-01-01"}, {"id": "r238", "owner_id": "u", "clinic_id": "c1", "employee_id": "e5", "year": 2026, "month": 10, "therapy_production": 3230, "group_classes_production": 242, "objective": 3500, "hours_worked": 112, "created_at": "2026-01-01"}, {"id": "r239", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2026, "month": 10, "therapy_production": 2598, "group_classes_production": 202, "objective": 3500, "hours_worked": 95, "created_at": "2026-01-01"}, {"id": "r240", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2026, "month": 10, "therapy_production": 2845, "group_classes_production": 497, "objective": 3500, "hours_worked": 80, "created_at": "2026-01-01"}, {"id": "r241", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2026, "month": 10, "therapy_production": 3033, "group_classes_production": 235, "objective": 3500, "hours_worked": 132, "created_at": "2026-01-01"}, {"id": "r242", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2026, "month": 10, "therapy_production": 3251, "group_classes_production": 173, "objective": 3500, "hours_worked": 105, "created_at": "2026-01-01"}, {"id": "r243", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2026, "month": 10, "therapy_production": 3453, "group_classes_production": 121, "objective": 3500, "hours_worked": 105, "created_at": "2026-01-01"}, {"id": "r244", "owner_id": "u", "clinic_id": "c2", "employee_id": "e5", "year": 2026, "month": 10, "therapy_production": 2998, "group_classes_production": 253, "objective": 3500, "hours_worked": 99, "created_at": "2026-01-01"}, {"id": "r245", "owner_id": "u", "clinic_id": "c1", "employee_id": "e0", "year": 2026, "month": 11, "therapy_production": 2661, "group_classes_production": 219, "objective": 3500, "hours_worked": 85, "created_at": "2026-01-01"}, {"id": "r246", "owner_id": "u", "clinic_id": "c1", "employee_id": "e1", "year": 2026, "month": 11, "therapy_production": 3033, "group_classes_production": 370, "objective": 3500, "hours_worked": 134, "created_at": "2026-01-01"}, {"id": "r247", "owner_id": "u", "clinic_id": "c1", "employee_id": "e2", "year": 2026, "month": 11, "therapy_production": 3455, "group_classes_production": 179, "objective": 3500, "hours_worked": 122, "created_at": "2026-01-01"}, {"id": "r248", "owner_id": "u", "clinic_id": "c1", "employee_id": "e3", "year": 2026, "month": 11, "therapy_production": 3515, "group_classes_production": 405, "objective": 3500, "hours_worked": 104, "created_at": "2026-01-01"}, {"id": "r249", "owner_id": "u", "clinic_id": "c1", "employee_id": "e4", "year": 2026, "month": 11, "therapy_production": 3399, "group_classes_production": 266, "objective": 3500, "hours_worked": 126, "created_at": "2026-01-01"}, {"id": "r250", "owner_id": "u", "clinic_id": "c1", "employee_id": "e5", "year": 2026, "month": 11, "therapy_production": 3140, "group_classes_production": 176, "objective": 3500, "hours_worked": 98, "created_at": "2026-01-01"}, {"id": "r251", "owner_id": "u", "clinic_id": "c2", "employee_id": "e0", "year": 2026, "month": 11, "therapy_production": 2709, "group_classes_production": 416, "objective": 3500, "hours_worked": 121, "created_at": "2026-01-01"}, {"id": "r252", "owner_id": "u", "clinic_id": "c2", "employee_id": "e1", "year": 2026, "month": 11, "therapy_production": 2808, "group_classes_production": 122, "objective": 3500, "hours_worked": 132, "created_at": "2026-01-01"}, {"id": "r253", "owner_id": "u", "clinic_id": "c2", "employee_id": "e2", "year": 2026, "month": 11, "therapy_production": 3437, "group_classes_production": 362, "objective": 3500, "hours_worked": 120, "created_at": "2026-01-01"}, {"id": "r254", "owner_id": "u", "clinic_id": "c2", "employee_id": "e3", "year": 2026, "month": 11, "therapy_production": 3368, "group_classes_production": 475, "objective": 3500, "hours_worked": 124, "created_at": "2026-01-01"}, {"id": "r255", "owner_id": "u", "clinic_id": "c2", "employee_id": "e4", "year": 2026, "month": 11, "therapy_production": 3266, "group_classes_production": 171, "objective": 3500, "hours_worked": 138, "created_at": "2026-01-01"}, {"id": "r256", "owner_id": "u", "clinic_id": "c2", "employee_id": "e5", "year": 2026, "month": 11, "therapy_production": 3155, "group_classes_production": 485, "objective": 3500, "hours_worked": 112, "created_at": "2026-01-01"}]};window.__log=[];window.__nid=100000;window.__fail=null;window.confirm=()=>true;
+function q(t){const st={op:'select',f:[],p:null,o:null};
+const m=r=>st.f.every(([k,v])=>String(r[k])===String(v));
+const o={select(){return o},order(){return o},range(){return o},eq(k,v){st.f.push([k,v]);return o},
+update(p){st.op='update';st.p=p;return o},insert(p){st.op='insert';st.p=p;return o},upsert(p,op){st.op='upsert';st.p=p;st.o=op;return o},delete(){st.op='delete';return o},
+then(res){const T=window.__db[t];let data=null;
+ if(st.op!=='select'&&window.__fail===st.op){window.__log.push({t,op:st.op,failed:true});res({data:null,error:{message:'fallo simulado'}});return}
+ if(st.op==='select')data=T.filter(m).map(r=>({...r}));
+ else{window.__log.push({t,op:st.op,p:JSON.parse(JSON.stringify(st.p)),f:st.f,o:st.o});
+  if(st.op==='update'){T.filter(m).forEach(r=>Object.assign(r,st.p))}
+  if(st.op==='insert'){[].concat(st.p).forEach(r=>T.push({id:'n'+(++window.__nid),...r}))}
+  if(st.op==='upsert'){const keys=st.o.onConflict.split(',');[].concat(st.p).forEach(r=>{const ex=T.find(x=>keys.every(k=>String(x[k])===String(r[k])));if(ex)Object.assign(ex,r);else T.push({id:'n'+(++window.__nid),...r})})}
+  if(st.op==='delete'){window.__db[t]=T.filter(r=>!m(r))}
+ }
+ res({data,error:null})}};return o}
+window.supabase={createClient(){return{auth:{getSession:async()=>({data:{session:{user:{id:'u'}}},error:null}),signOut:async()=>({error:null})},from:q}}};
+</script>
+  
+<style>
+:root{--green:#173f35;--green2:#245849;--bg:#f4f6f5;--white:#fff;--text:#26332e;--muted:#78847e;--border:#e3e9e5;--red:#a33;--gold:#d6b65c}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--text)}
+header{background:var(--green);color:#fff;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+header h1{margin:0;font-size:20px}header small{color:#d9e5df}
+button{cursor:pointer;font-size:14px}button:disabled{opacity:.55;cursor:wait}
+#logout{background:transparent;border:1px solid #ffffff66;color:#fff;padding:9px 12px;border-radius:8px}
+main{max-width:1050px;margin:22px auto;padding:0 15px 40px}
+.panel{background:#fff;border:1px solid var(--border);border-radius:14px;padding:19px;margin-bottom:17px}
+#login{max-width:420px;margin:65px auto;padding:24px}
+#login h1{color:var(--green);font-size:22px}
+h2{font-size:19px;margin:0 0 7px}
+.description{color:var(--muted);font-size:13px;line-height:1.5;margin:0 0 17px}
+label{display:block;font-size:13px;font-weight:600;margin:13px 0 7px}
+input,select{width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;background:#fff;font-size:15px;color:var(--text)}
+.primary{background:var(--green);color:#fff;border:0;border-radius:8px;padding:12px 17px;font-weight:600}
+.secondary{background:#fff;border:1px solid var(--border);color:var(--text);border-radius:8px;padding:9px 12px}
+.danger{color:var(--red);border-color:#e7caca}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+.tabs{display:flex;gap:8px;margin-bottom:20px;overflow-x:auto}
+.tab{border:1px solid var(--border);background:#fff;color:var(--muted);border-radius:9px;padding:12px 15px;font-weight:600;white-space:nowrap}
+.tab.active{background:var(--green);color:#fff;border-color:var(--green)}
+.tab:disabled{opacity:.4}
+.item{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid var(--border)}
+.item:last-child{border-bottom:0}
+.item-name{font-weight:600}.item-sub{font-size:12px;color:var(--muted);margin-top:5px}
+.item-actions{display:flex;gap:7px;flex-wrap:wrap}
+.status{font-size:12px;color:var(--green2);margin-top:5px}.status.inactive{color:var(--red)}
+.count{font-size:13px;color:var(--muted);margin-bottom:8px}
+.empty{text-align:center;color:var(--muted);padding:22px 8px;font-size:14px}
+.note{font-size:12px;color:var(--muted);line-height:1.5}
+#loginMessage{margin-top:12px;white-space:pre-wrap}
+#message{display:none;padding:12px;border-radius:8px;margin-bottom:15px;font-size:14px;white-space:pre-wrap}
+#message.error,#loginMessage.error{background:#fff0f0;color:#933;padding:10px;border-radius:8px}
+#message.success{background:#edf7f0;color:#245b39}
+.total-box{background:#edf4f0;border-radius:10px;padding:14px;margin-top:15px}
+.total-box strong{font-size:23px;color:var(--green)}
+.total-box small{display:block;color:var(--muted);margin-bottom:5px}
+.record-total{font-weight:700;color:var(--green);margin-top:7px}
+.stats-filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:16px}
+.kpi{background:#f4f7f5;border:1px solid var(--border);border-radius:11px;padding:14px;min-width:0}
+.kpi small{display:block;color:var(--muted);font-size:12px;margin-bottom:8px}
+.kpi strong{display:block;color:var(--green);font-size:clamp(17px,2.5vw,24px);overflow-wrap:anywhere}
+.chart-wrap{width:100%;overflow:hidden}
+.chart-wrap svg{width:100%;height:auto;display:block}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin:8px 0}
+.legend span:before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--green);margin-right:6px}
+.legend .compare:before{background:var(--gold)}
+.stat-pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.stat-bar{height:10px;background:#e9eeeb;border-radius:10px;overflow:hidden;margin:7px 0 12px}
+.stat-bar span{display:block;height:100%;background:var(--green);border-radius:10px}
+@media(max-width:760px){.stats-filters{grid-template-columns:1fr 1fr}.kpis{grid-template-columns:1fr 1fr}.stat-pair{grid-template-columns:1fr}}
+@media(max-width:420px){.stats-filters{grid-template-columns:1fr}}
+[hidden]{display:none!important}
+@media(max-width:600px){header{padding:15px}header h1{font-size:17px}main{margin-top:15px}.panel{padding:15px}.grid{grid-template-columns:1fr}.item{align-items:flex-start;flex-direction:column}.item-actions{justify-content:flex-start}}
+
+/* --- Mejoras móvil / app (borrador) --- */
+.lb-short{display:none}
+@media(max-width:380px){.lb-full{display:none}.lb-short{display:inline}}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-tap-highlight-color:transparent}
+.filters-panel summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.filters-panel summary::-webkit-details-marker{display:none}
+.filters-panel summary h2{margin:0}
+.filters-panel summary:after{content:"▾";color:var(--muted);font-size:18px}
+.filters-panel:not([open]) summary:after{content:"▸"}
+.filters-panel[open] summary{margin-bottom:7px}
+@media(max-width:760px){
+  .chart-wrap svg text{font-size:17px}
+  header{position:sticky;top:0;z-index:5;padding:12px 15px}
+  header small{display:none}
+  body{padding-bottom:78px}
+  main{margin-top:12px}
+  .tabs{position:fixed;left:0;right:0;bottom:0;z-index:10;margin:0;gap:0;background:#fff;border-top:1px solid var(--border);padding:6px 4px calc(6px + env(safe-area-inset-bottom));overflow:visible;box-shadow:0 -2px 10px #0001}
+  .tab{flex:1;min-width:0;border:0;border-radius:10px;padding:8px 0 6px;font-size:9.5px;line-height:1.2;white-space:normal;text-align:center;background:transparent}
+  .tab:before{content:"";display:block;width:22px;height:22px;margin:0 auto 3px;background:currentColor;-webkit-mask:var(--ic) center/contain no-repeat;mask:var(--ic) center/contain no-repeat}
+  .tab[data-page=clinics]{--ic:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27black%27%20stroke-width%3D%272%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M3%2021V8l9-5%209%205v13%27/%3E%3Cpath%20d%3D%27M12%209v6M9%2012h6%27/%3E%3C/svg%3E")}
+  .tab[data-page=employees]{--ic:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27black%27%20stroke-width%3D%272%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Ccircle%20cx%3D%2712%27%20cy%3D%278%27%20r%3D%274%27/%3E%3Cpath%20d%3D%27M4%2021c0-4%204-6%208-6s8%202%208%206%27/%3E%3C/svg%3E")}
+  .tab[data-page=production]{--ic:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27black%27%20stroke-width%3D%272%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M4%2020V10M10%2020V4M16%2020v-8M22%2020H2%27/%3E%3C/svg%3E")}
+  .tab[data-page=quick]{--ic:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27black%27%20stroke-width%3D%272%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M13%202L4%2014h7l-1%208%209-12h-7z%27/%3E%3C/svg%3E")}
+  .tab[data-page=statistics]{--ic:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27black%27%20stroke-width%3D%272%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M3%2017l6-6%204%204%208-8%27/%3E%3Cpath%20d%3D%27M15%207h6v6%27/%3E%3C/svg%3E")}
+  .tab[data-page=backups]{--ic:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27black%27%20stroke-width%3D%272%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M5%203h11l3%203v15H5z%27/%3E%3Cpath%20d%3D%27M8%203v6h8V3M8%2021v-7h8v7%27/%3E%3C/svg%3E")}
+  .tab.active{background:#e6f0eb;color:var(--green)}
+  .stats-filters{grid-template-columns:1fr 1fr}
+  .stats-filters label{margin:6px 0 5px}
+  .description,.note{display:none}
+  button,input,select{min-height:44px}
+  .primary,.secondary{min-height:44px}
+}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+.chips label{display:inline-flex;align-items:center;gap:6px;margin:0;font-weight:600;font-size:13px;border:1px solid var(--border);border-radius:20px;padding:8px 12px;background:#fff;cursor:pointer}
+.chips label.on{background:#e6f0eb;border-color:var(--green2);color:var(--green)}
+.chips input{width:auto;min-height:0;margin:0;accent-color:var(--green)}
+.chips i{width:10px;height:10px;border-radius:50%;display:inline-block}
+#cmpLegend span:before{background:var(--c)}
+.cmp-row{display:flex;justify-content:space-between;gap:8px;padding:9px 0;border-bottom:1px solid var(--border);font-size:14px}
+.cmp-row span:first-child:before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--c);margin-right:8px}
+
+@media(max-width:760px){
+  #quickTable>div{overflow:visible!important}
+  #quickTable table{min-width:0!important;display:block}
+  #quickTable thead{display:none}
+  #quickTable tbody{display:block}
+  #quickTable tr[data-quick-row]{display:grid;grid-template-columns:1fr 1fr;gap:8px 10px;padding:14px 0;border-bottom:1px solid var(--border)}
+  #quickTable td{display:block;padding:0!important;min-width:0!important}
+  #quickTable td:first-child{grid-column:1/-1;font-size:16px}
+  #quickTable td:last-child{grid-column:1/-1;color:var(--green)}
+  #quickTable td input{min-width:0!important}
+  #quickTable td:not(:first-child):before{display:block;font-size:12px;color:var(--muted);font-weight:600;margin-bottom:4px;white-space:normal}
+  #quickTable td:nth-child(2):before{content:"Terapia (€)"}
+  #quickTable td:nth-child(3):before{content:"Clases (€)"}
+  #quickTable td:nth-child(4):before{content:"Objetivo (€)"}
+  #quickTable td:nth-child(5):before{content:"Horas"}
+  #quickTable td:nth-child(6):before{content:"Total (€)"}
+}
+</style>
+</head>
+<body>
+<section id="login" class="panel">
+  <h1>PRODUCTIVIDAD FAMED</h1>
+  <p class="description">Acceso privado de administración</p>
+  <form id="loginForm">
+    <label for="email">Correo electrónico</label>
+    <input id="email" type="email" required autocomplete="username">
+    <label for="password">Contraseña</label>
+    <input id="password" type="password" required autocomplete="current-password">
+    <div class="actions"><button class="primary" type="submit" id="loginButton">Iniciar sesión</button></div>
+  </form>
+  <div id="loginMessage" class="note" role="status" aria-live="polite"></div>
+</section>
+
+<div id="app" hidden>
+<div style="background:#d4b45a;color:#173f35;text-align:center;font:700 13px system-ui;padding:6px">DEMO · datos ficticios · no conectado a FAMED</div>
+<header>
+  <div><h1>PRODUCTIVIDAD FAMED</h1><small>Panel de administración</small></div>
+  <button id="logout" type="button">Cerrar sesión</button>
+</header>
+<main>
+  <nav class="tabs">
+    <button class="tab active" data-page="clinics" type="button">Clínicas</button>
+    <button class="tab" data-page="employees" type="button"><span class="lb-full">Fisioterapeutas</span><span class="lb-short">Fisios</span></button>
+    <button class="tab" data-page="production" type="button" hidden>Producción</button>
+    <button class="tab" data-page="quick" type="button">Carga rápida</button>
+    <button class="tab" data-page="statistics" type="button"><span class="lb-full">Estadísticas</span><span class="lb-short">Estad.</span></button>
+    <button class="tab" data-page="backups" type="button"><span class="lb-full">Copias de seguridad</span><span class="lb-short">Copias</span></button>
+  </nav>
+  <div id="message" role="status" aria-live="polite"></div>
+
+  <section id="clinicsPage">
+    <div class="panel">
+      <h2 id="clinicFormTitle">Añadir clínica</h2>
+      <p class="description">Registra las clínicas en las que se contabilizará la producción.</p>
+      <form id="clinicForm">
+        <label for="clinicName">Nombre de la clínica</label><input id="clinicName" required maxlength="100">
+        <label for="clinicAddress">Dirección (opcional)</label><input id="clinicAddress" maxlength="200">
+        <div class="actions">
+          <button class="primary" type="submit" id="clinicSave">Guardar clínica</button>
+          <button class="secondary" type="button" id="clinicCancel" hidden>Cancelar</button>
+        </div>
+      </form>
+    </div>
+    <div class="panel"><h2>Clínicas registradas</h2><div id="clinicCount" class="count"></div><div id="clinicList"></div></div>
+  </section>
+
+  <section id="employeesPage" hidden>
+    <div class="panel">
+      <h2 id="employeeFormTitle">Añadir fisioterapeuta</h2>
+      <p class="description">Cada fisioterapeuta tendrá una única ficha, aunque trabaje en varias clínicas.</p>
+      <form id="employeeForm">
+        <label for="employeeName">Nombre y apellidos</label><input id="employeeName" required maxlength="120">
+        <div class="actions">
+          <button class="primary" type="submit" id="employeeSave">Guardar fisioterapeuta</button>
+          <button class="secondary" type="button" id="employeeCancel" hidden>Cancelar</button>
+        </div>
+      </form>
+    </div>
+    <div class="panel"><h2>Fisioterapeutas registrados</h2><div id="employeeCount" class="count"></div><div id="employeeList"></div></div>
+  </section>
+
+  <section id="productionPage" hidden>
+    <div class="panel">
+      <h2 id="recordFormTitle">Introducir producción mensual</h2>
+      <p class="description">Registra la producción de un fisioterapeuta en una clínica durante un mes. Puedes introducir meses anteriores, el actual o futuros.</p>
+      <form id="recordForm">
+        <div class="grid">
+          <div><label for="recordClinic">Clínica</label><select id="recordClinic" required></select></div>
+          <div><label for="recordEmployee">Fisioterapeuta</label><select id="recordEmployee" required></select></div>
+          <div><label for="recordMonth">Mes</label><select id="recordMonth" required>
+            <option value="1">Enero</option><option value="2">Febrero</option><option value="3">Marzo</option><option value="4">Abril</option><option value="5">Mayo</option><option value="6">Junio</option><option value="7">Julio</option><option value="8">Agosto</option><option value="9">Septiembre</option><option value="10">Octubre</option><option value="11">Noviembre</option><option value="12">Diciembre</option>
+          </select></div>
+          <div><label for="recordYear">Año</label><input id="recordYear" type="number" min="2000" max="2100" required></div>
+          <div><label for="therapy">Producción de terapia (€)</label><input id="therapy" type="number" min="0" step="0.01" value="0" required></div>
+          <div><label for="classes">Producción de clases colectivas (€)</label><input id="classes" type="number" min="0" step="0.01" value="0" required></div>
+          <div><label for="objective">Objetivo mensual (€)</label><input id="objective" type="number" min="0" step="0.01" value="0" required></div>
+          <div><label for="hours">Horas trabajadas</label><input id="hours" type="number" min="0" step="0.01" value="0" required></div>
+        </div>
+        <div class="total-box"><small>Producción total calculada automáticamente</small><strong id="liveTotal">0,00 €</strong></div>
+        <p class="note">Si ya existe un registro para esa combinación de clínica, fisioterapeuta, mes y año, se actualizarán sus datos en lugar de crear uno duplicado.</p>
+        <div class="actions">
+          <button class="primary" type="submit" id="recordSave">Guardar producción</button>
+          <button class="secondary" type="button" id="recordCancel" hidden>Cancelar edición</button>
+        </div>
+      </form>
+    </div>
+    <div class="panel">
+      <h2>Consultar producción registrada</h2>
+      <p class="description">Selecciona un mes y año para consultar los registros de todas las clínicas.</p>
+      <div class="grid">
+        <div><label for="filterMonth">Mes de consulta</label><select id="filterMonth">
+          <option value="1">Enero</option><option value="2">Febrero</option><option value="3">Marzo</option><option value="4">Abril</option><option value="5">Mayo</option><option value="6">Junio</option><option value="7">Julio</option><option value="8">Agosto</option><option value="9">Septiembre</option><option value="10">Octubre</option><option value="11">Noviembre</option><option value="12">Diciembre</option>
+        </select></div>
+        <div><label for="filterYear">Año de consulta</label><input id="filterYear" type="number" min="2000" max="2100"></div>
+      </div>
+      <div class="actions"><button class="primary" type="button" id="filterButton">Consultar</button></div>
+      <div class="total-box"><small>Producción total del periodo consultado</small><strong id="periodTotal">0,00 €</strong><p class="note" id="periodDetails"></p></div>
+      <div id="recordCount" class="count" style="margin-top:16px"></div><div id="recordList"></div>
+    </div>
+  </section>
+  
+  <section id="quickPage" hidden>
+    <div class="panel">
+      <h2>Carga rápida mensual</h2>
+      <p class="description">Selecciona una clínica y un periodo. Aparecerán todos sus fisioterapeutas para introducir la producción de una sola vez.</p>
+      <div class="grid">
+        <div>
+          <label for="quickClinic">Clínica</label>
+          <select id="quickClinic" required></select>
+        </div>
+        <div>
+          <label for="quickYear">Año</label>
+          <input id="quickYear" type="number" min="2000" max="2100" required>
+        </div>
+        <div>
+          <label for="quickMonth">Mes</label>
+          <select id="quickMonth">
+            <option value="1">Enero</option>
+            <option value="2">Febrero</option>
+            <option value="3">Marzo</option>
+            <option value="4">Abril</option>
+            <option value="5">Mayo</option>
+            <option value="6">Junio</option>
+            <option value="7">Julio</option>
+            <option value="8">Agosto</option>
+            <option value="9">Septiembre</option>
+            <option value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+          </select>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="primary" type="button" id="quickLoad">Cargar fisioterapeutas</button>
+        <button class="secondary" type="button" id="quickCopyPrevious">Copiar mes anterior</button>
+      </div>
+    </div>
+    <div class="panel">
+      <h2>Producción por fisioterapeuta</h2>
+      <div id="quickTable">
+        <div class="empty">Selecciona una clínica y un periodo para empezar.</div>
+      </div>
+      <div class="actions">
+        <button class="primary" type="button" id="quickSave">Guardar todos los registros</button>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="statisticsPage" hidden>
+    <details class="panel filters-panel" id="filtersPanel" open>
+      <summary><h2>Filtros de análisis</h2></summary>
+      <p class="description">Selecciona el periodo y el ámbito que quieres analizar. Puedes comparar dos años y uno o varios fisioterapeutas.</p>
+      <div class="stats-filters">
+        <div><label for="statsYear">Año principal</label><select id="statsYear"></select></div>
+        <div><label for="statsCompareYear">Comparar con año</label><select id="statsCompareYear"><option value="">Sin comparación</option></select></div>
+        <div><label for="statsClinic">Clínica</label><select id="statsClinic"><option value="">Todas las clínicas</option></select></div>
+        <div><label for="statsEmployees">Fisioterapeutas</label><select id="statsEmployees" multiple size="3" aria-label="Selecciona uno o varios fisioterapeutas"></select></div>
+      </div>
+      <p class="note">En el selector de fisioterapeutas puedes seleccionar varios. Si no seleccionas ninguno, se incluirán todos.</p>
+      <div class="actions"><button class="primary" type="button" id="refreshStats">Actualizar estadísticas</button></div>
+    </details>
+    <div class="kpis">
+      <div class="kpi"><small>Producción total</small><strong id="statProduction">—</strong></div>
+      <div class="kpi"><small>Objetivos acumulados</small><strong id="statObjective">—</strong></div>
+    </div>
+    <div class="panel" id="comparePanel">
+      <h2>Comparativa de series</h2>
+      <p class="description">Compara hasta 5 series en una misma gráfica, mes a mes.</p>
+      <div class="grid">
+        <div><label for="cmpMode">Comparar</label><select id="cmpMode"><option value="months">Meses</option><option value="years">Años</option><option value="employees">Fisioterapeutas</option><option value="clinics">Clínicas</option></select></div>
+        <div><label for="cmpMetric">Medida</label><select id="cmpMetric"><option value="total">Producción total</option><option value="therapy">Terapia</option><option value="classes">Clases colectivas</option></select></div>
+      </div>
+      <label>Elige hasta 5</label>
+      <div class="chips" id="cmpChips"></div>
+      <p class="note" id="cmpScope" style="display:block"></p>
+      <div class="legend" id="cmpLegend"></div>
+      <div class="chart-wrap" id="cmpChart"></div>
+      <div id="cmpTable"></div>
+    </div>
+    <div class="panel">
+      <h2>Evolución mensual</h2><p class="description">Producción total por mes del año seleccionado.</p>
+      <div class="legend"><span>Año principal</span><span class="compare" id="compareLegend" hidden>Año de comparación</span></div>
+      <div class="chart-wrap" id="monthlyChart"><div class="empty">Cargando datos…</div></div>
+    </div>
+    <div class="stat-pair">
+      <div class="panel"><h2>Composición de la producción</h2><p class="description">Peso de terapia y clases colectivas.</p><div id="categoryChart"></div></div>
+      <div class="panel"><h2>Producción por fisioterapeuta</h2><p class="description">Ranking del año principal según los filtros seleccionados.</p><div id="employeeChart"></div></div>
+    </div>
+    <div class="panel"><h2>Comparativa anual</h2><p class="description" id="annualComparisonText">Resumen del año seleccionado.</p><div id="annualComparison"></div></div>
+  </section>
+  <section id="backupsPage" hidden>
+  <div class="panel">
+    <h2>Copias de seguridad</h2>
+    <p>Descarga un archivo con todos los datos de tus clínicas, fisioterapeutas y registros de producción.</p>
+    <button class="primary" type="button" id="createBackup">
+      Descargar copia de seguridad
+    </button>
+    <button class="secondary" type="button" id="exportExcel" style="margin-top:10px">
+  Exportar datos a Excel
+    </button>
+  </div>
+
+  <div class="panel">
+    <h2>Restaurar copia de seguridad</h2>
+    <p>Selecciona un archivo JSON de una copia anterior para recuperar sus datos.</p>
+    <input id="backupFile" type="file" accept=".json,application/json">
+    <button class="secondary" type="button" id="restoreBackup">
+      Restaurar datos
+    </button>
+    <p>La restauración incorporará los datos de la copia sin borrar los registros actuales.</p>
+  </div>
+  </section>
+</main>
+</div>
+
+<script>
+(() => {
+  "use strict";
+
+  // La clave publishable es apta para el navegador. La protección de datos depende de RLS en Supabase.
+  const SUPABASE_URL = "https://demo.supabase.co";
+  const SUPABASE_KEY = "sb_publishable_demo";
+
+  const $ = id => document.getElementById(id);
+  let db = null;
+  let currentUser = null;
+  let clinics = [];
+  let employees = [];
+  let records = [];
+  let statsRecords = [];
+  let editingClinicId = null;
+  let editingEmployeeId = null;
+  let editingRecordId = null;
+
+  function loginMessage(message, isError = false) {
+    const box = $("loginMessage");
+    box.textContent = message || "";
+    box.className = isError ? "note error" : "note";
+  }
+  function showMessage(message, type = "success") {
+    const box = $("message");
+    box.textContent = message;
+    box.className = type;
+    box.style.display = "block";
+    window.scrollTo({top:0, behavior:"smooth"});
+    window.clearTimeout(showMessage.timer);
+    showMessage.timer = window.setTimeout(() => { box.style.display = "none"; }, 5000);
+  }
+  function euro(value) {
+    return Number(value || 0).toLocaleString("es-ES", {style:"currency",currency:"EUR"});
+  }
+  function escapeHTML(value) {
+    return String(value ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[ch]));
+  }
+  function showApp() {
+    $("login").hidden = true;
+    $("app").hidden = false;
+  }
+  function showLogin() {
+    $("app").hidden = true;
+    $("login").hidden = false;
+  }
+  function changePage(page) {
+    $("clinicsPage").hidden = page !== "clinics";
+    $("employeesPage").hidden = page !== "employees";
+    $("productionPage").hidden = page !== "production";
+    $("quickPage").hidden = page !== "quick";
+    $("statisticsPage").hidden = page !== "statistics";
+    $("backupsPage").hidden = page !== "backups";
+    document.querySelectorAll(".tab[data-page]").forEach(tab => tab.classList.toggle("active", tab.dataset.page === page));
+  }
+  document.querySelectorAll(".tab[data-page]").forEach(button => button.addEventListener("click", async () => {
+    changePage(button.dataset.page);
+    if (button.dataset.page === "statistics") { try { await loadStatistics(); } catch (error) { showMessage("No se pudieron cargar las estadísticas: " + error.message, "error"); } }
+  }));
+
+  function initializeSupabase() {
+    if (!window.supabase || typeof window.supabase.createClient !== "function") {
+      throw new Error("No se ha podido cargar la biblioteca de conexión. Comprueba tu conexión a Internet y vuelve a cargar la página.");
+    }
+    if (!SUPABASE_URL.startsWith("https://") || !SUPABASE_URL.endsWith(".supabase.co") || !SUPABASE_KEY.startsWith("sb_publishable_")) {
+      throw new Error("La dirección o la clave pública de Supabase no tienen el formato esperado.");
+    }
+    db = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+  }
+
+  async function startApp() {
+    try {
+      const {data, error} = await db.auth.getSession();
+      if (error) throw error;
+      if (data.session) {
+        currentUser = data.session.user;
+        showApp();
+        await loadAll();
+      } else {
+        showLogin();
+      }
+    } catch (error) {
+      showLogin();
+      loginMessage("No se ha podido comprobar la sesión: " + (error.message || String(error)), true);
+    }
+  }
+
+  $("loginForm").addEventListener("submit", async event => {
+    event.preventDefault();
+    if (!db) {
+      loginMessage("La conexión con Supabase no se ha inicializado. Recarga la página; si continúa, revisa que el CDN esté accesible.", true);
+      return;
+    }
+    const button = $("loginButton");
+    button.disabled = true;
+    button.textContent = "Comprobando...";
+    loginMessage("Comprobando acceso...");
+    try {
+      const {data, error} = await db.auth.signInWithPassword({
+        email: $("email").value.trim(),
+        password: $("password").value
+      });
+      if (error) throw error;
+      currentUser = data.user;
+      loginMessage("");
+      showApp();
+      await loadAll();
+    } catch (error) {
+      loginMessage("No se pudo iniciar sesión: " + (error.message || String(error)), true);
+    } finally {
+      button.disabled = false;
+      button.textContent = "Iniciar sesión";
+    }
+  });
+
+  $("logout").addEventListener("click", async () => {
+    try {
+      const {error} = await db.auth.signOut();
+      if (error) throw error;
+      currentUser = null;
+      showLogin();
+    } catch (error) {
+      showMessage("No se pudo cerrar sesión: " + error.message, "error");
+    }
+  });
+
+  async function loadAll() {
+    await loadClinics();
+    await loadEmployees();
+    updateSelects();
+    await loadRecords();
+  }
+
+  async function loadClinics() {
+    const {data, error} = await db.from("clinics").select("*").order("name");
+    if (error) throw new Error("Error al cargar clínicas: " + error.message);
+    clinics = data || [];
+    renderClinics();
+  }
+  function renderClinics() {
+    $("clinicCount").textContent = `${clinics.length} clínicas · ${clinics.filter(c => c.active).length} activas`;
+    if (!clinics.length) {
+      $("clinicList").innerHTML = '<div class="empty">Todavía no hay clínicas.</div>';
+      return;
+    }
+    $("clinicList").innerHTML = clinics.map(c => `
+      <div class="item"><div>
+        <div class="item-name">${escapeHTML(c.name)}</div>
+        <div class="item-sub">${escapeHTML(c.address || "Sin dirección indicada")}</div>
+        <div class="status ${c.active ? "" : "inactive"}">${c.active ? "Activa" : "Inactiva"}</div>
+      </div><div class="item-actions">
+        <button class="secondary" type="button" data-edit-clinic="${c.id}">Editar</button>
+        <button class="secondary" type="button" data-toggle-clinic="${c.id}">${c.active ? "Desactivar" : "Activar"}</button>
+      </div></div>`).join("");
+    document.querySelectorAll("[data-edit-clinic]").forEach(b => b.addEventListener("click", () => editClinic(b.dataset.editClinic)));
+    document.querySelectorAll("[data-toggle-clinic]").forEach(b => b.addEventListener("click", () => toggleClinic(b.dataset.toggleClinic)));
+  }
+  $("clinicForm").addEventListener("submit", async event => {
+    event.preventDefault();
+    const name = $("clinicName").value.trim();
+    const address = $("clinicAddress").value.trim();
+    $("clinicSave").disabled = true;
+    try {
+      const result = editingClinicId
+        ? await db.from("clinics").update({name, address}).eq("id", editingClinicId)
+        : await db.from("clinics").insert({name, address, owner_id: currentUser.id});
+      if (result.error) throw result.error;
+      resetClinicForm();
+      await loadClinics();
+      updateSelects();
+      showMessage("Clínica guardada correctamente.");
+    } catch (error) {
+      showMessage("No se pudo guardar la clínica: " + error.message, "error");
+    } finally {
+      $("clinicSave").disabled = false;
+    }
+  });
+  function editClinic(id) {
+    const c = clinics.find(x => x.id === id);
+    if (!c) return;
+    editingClinicId = id;
+    $("clinicName").value = c.name;
+    $("clinicAddress").value = c.address || "";
+    $("clinicFormTitle").textContent = "Editar clínica";
+    $("clinicSave").textContent = "Guardar cambios";
+    $("clinicCancel").hidden = false;
+    changePage("clinics");
+    window.scrollTo({top:0, behavior:"smooth"});
+  }
+  function resetClinicForm() {
+    editingClinicId = null;
+    $("clinicForm").reset();
+    $("clinicFormTitle").textContent = "Añadir clínica";
+    $("clinicSave").textContent = "Guardar clínica";
+    $("clinicCancel").hidden = true;
+  }
+  $("clinicCancel").addEventListener("click", resetClinicForm);
+  async function toggleClinic(id) {
+    const c = clinics.find(x => x.id === id);
+    if (!c) return;
+    try {
+      const {error} = await db.from("clinics").update({active:!c.active}).eq("id", id);
+      if (error) throw error;
+      await loadClinics();
+      updateSelects();
+      showMessage(c.active ? "Clínica desactivada." : "Clínica activada.");
+    } catch (error) {
+      showMessage("No se pudo cambiar la clínica: " + error.message, "error");
+    }
+  }
+
+  async function loadEmployees() {
+    const {data, error} = await db.from("employees").select("*").order("full_name");
+    if (error) throw new Error("Error al cargar fisioterapeutas: " + error.message);
+    employees = data || [];
+    renderEmployees();
+  }
+  function renderEmployees() {
+    $("employeeCount").textContent = `${employees.length} fisioterapeutas · ${employees.filter(e => e.active).length} activos`;
+    if (!employees.length) {
+      $("employeeList").innerHTML = '<div class="empty">Todavía no hay fisioterapeutas.</div>';
+      return;
+    }
+    $("employeeList").innerHTML = employees.map(e => `
+      <div class="item"><div>
+        <div class="item-name">${escapeHTML(e.full_name)}</div>
+        <div class="status ${e.active ? "" : "inactive"}">${e.active ? "Activo" : "Inactivo"}</div>
+      </div><div class="item-actions">
+        <button class="secondary" type="button" data-edit-employee="${e.id}">Editar</button>
+        <button class="secondary" type="button" data-toggle-employee="${e.id}">${e.active ? "Desactivar" : "Activar"}</button>
+      </div></div>`).join("");
+    document.querySelectorAll("[data-edit-employee]").forEach(b => b.addEventListener("click", () => editEmployee(b.dataset.editEmployee)));
+    document.querySelectorAll("[data-toggle-employee]").forEach(b => b.addEventListener("click", () => toggleEmployee(b.dataset.toggleEmployee)));
+  }
+  $("employeeForm").addEventListener("submit", async event => {
+    event.preventDefault();
+    const full_name = $("employeeName").value.trim();
+    $("employeeSave").disabled = true;
+    try {
+      const result = editingEmployeeId
+        ? await db.from("employees").update({full_name}).eq("id", editingEmployeeId)
+        : await db.from("employees").insert({full_name, owner_id: currentUser.id});
+      if (result.error) throw result.error;
+      resetEmployeeForm();
+      await loadEmployees();
+      updateSelects();
+      showMessage("Fisioterapeuta guardado correctamente.");
+    } catch (error) {
+      showMessage("No se pudo guardar el fisioterapeuta: " + error.message, "error");
+    } finally {
+      $("employeeSave").disabled = false;
+    }
+  });
+  function editEmployee(id) {
+    const e = employees.find(x => x.id === id);
+    if (!e) return;
+    editingEmployeeId = id;
+    $("employeeName").value = e.full_name;
+    $("employeeFormTitle").textContent = "Editar fisioterapeuta";
+    $("employeeSave").textContent = "Guardar cambios";
+    $("employeeCancel").hidden = false;
+    changePage("employees");
+    window.scrollTo({top:0, behavior:"smooth"});
+  }
+  function resetEmployeeForm() {
+    editingEmployeeId = null;
+    $("employeeForm").reset();
+    $("employeeFormTitle").textContent = "Añadir fisioterapeuta";
+    $("employeeSave").textContent = "Guardar fisioterapeuta";
+    $("employeeCancel").hidden = true;
+  }
+  $("employeeCancel").addEventListener("click", resetEmployeeForm);
+  async function toggleEmployee(id) {
+    const e = employees.find(x => x.id === id);
+    if (!e) return;
+    try {
+      const {error} = await db.from("employees").update({active:!e.active}).eq("id", id);
+      if (error) throw error;
+      await loadEmployees();
+      updateSelects();
+      showMessage(e.active ? "Fisioterapeuta desactivado." : "Fisioterapeuta activado.");
+    } catch (error) {
+      showMessage("No se pudo cambiar el fisioterapeuta: " + error.message, "error");
+    }
+  }
+
+  function updateSelects() {
+    const oldClinic = $("recordClinic").value;
+    const oldEmployee = $("recordEmployee").value;
+    const activeClinics = clinics.filter(c => c.active);
+    const activeEmployees = employees.filter(e => e.active);
+    $("recordClinic").innerHTML = '<option value="">Selecciona clínica</option>' + activeClinics.map(c => `<option value="${c.id}">${escapeHTML(c.name)}</option>`).join("");
+    $("recordEmployee").innerHTML = '<option value="">Selecciona fisioterapeuta</option>' + activeEmployees.map(e => `<option value="${e.id}">${escapeHTML(e.full_name)}</option>`).join("");
+        const oldQuickClinic = $("quickClinic").value;
+    $("quickClinic").innerHTML = '<option value="">Selecciona clínica</option>' + activeClinics.map(c => `<option value="${c.id}">${escapeHTML(c.name)}</option>`).join("");
+    if (activeClinics.some(c => c.id === oldQuickClinic)) $("quickClinic").value = oldQuickClinic;
+    if (activeClinics.some(c => c.id === oldClinic)) $("recordClinic").value = oldClinic;
+    if (activeEmployees.some(e => e.id === oldEmployee)) $("recordEmployee").value = oldEmployee;
+  }
+
+    function renderQuickTable(existingRecords = []) {
+    const activeEmployees = employees.filter(e => e.active);
+
+    if (!activeEmployees.length) {
+      $("quickTable").innerHTML = '<div class="empty">No hay fisioterapeutas activos registrados.</div>';
+      return;
+    }
+
+    const rows = activeEmployees.map(employee => {
+      const record = existingRecords.find(r => r.employee_id === employee.id);
+
+      return `
+                <tr data-quick-row="${employee.id}" data-quick-existing="${record ? "true" : "false"}">
+          <td style="padding:10px 6px;font-weight:600;min-width:150px"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span>${escapeHTML(employee.full_name)}</span>${record && record.id ? `<button type="button" class="secondary danger" data-quick-delete="${record.id}" data-quick-name="${escapeHTML(employee.full_name)}" style="font-size:12px;padding:6px 10px;min-height:0">Eliminar registro</button>` : ""}</div></td>
+                    <td><input type="number" min="0" step="0.01" value="${record ? record.therapy_production : ""}" data-quick-field="therapy" style="min-width:100px"></td>
+          <td><input type="number" min="0" step="0.01" value="${record ? record.group_classes_production : ""}" data-quick-field="classes" style="min-width:100px"></td>
+          <td><input type="number" min="0" step="0.01" value="${record ? record.objective : ""}" data-quick-field="objective" style="min-width:100px"></td>
+          <td><input type="number" min="0" step="0.01" value="${record ? record.hours_worked : ""}" data-quick-field="hours" style="min-width:85px"></td>
+          <td style="padding:10px 6px;font-weight:700;white-space:nowrap" data-quick-total>${euro(Number(record?.therapy_production || 0) + Number(record?.group_classes_production || 0))}</td>
+        </tr>`;
+    }).join("");
+
+    $("quickTable").innerHTML = `
+      <div style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;min-width:720px">
+          <thead>
+            <tr style="text-align:left;border-bottom:2px solid var(--border)">
+              <th style="padding:10px 6px">Fisioterapeuta</th>
+              <th style="padding:10px 6px">Terapia (€)</th>
+              <th style="padding:10px 6px">Clases (€)</th>
+              <th style="padding:10px 6px">Objetivo (€)</th>
+              <th style="padding:10px 6px">Horas</th>
+              <th style="padding:10px 6px">Total (€)</th>
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+      <p class="note">Los registros que ya existían aparecen con sus datos actuales.</p>`;
+    }
+    async function loadQuickRecords() {
+    const clinicId = $("quickClinic").value;
+    const year = Number($("quickYear").value);
+    const month = Number($("quickMonth").value);
+
+    if (!clinicId || !year || year < 2000 || year > 2100) {
+      showMessage("Selecciona una clínica y un año válido.", "error");
+      return;
+    }
+
+    $("quickLoad").disabled = true;
+
+    try {
+      const { data, error } = await db
+        .from("monthly_records")
+        .select("*")
+        .eq("clinic_id", clinicId)
+        .eq("year", year)
+        .eq("month", month);
+
+      if (error) throw error;
+
+      renderQuickTable(data || []);
+    } catch (error) {
+      showMessage("No se pudieron cargar los registros: " + error.message, "error");
+    } finally {
+      $("quickLoad").disabled = false;
+    }
+    }
+      async function copyQuickPreviousMonth() {
+    const clinicId = $("quickClinic").value;
+    const targetYear = Number($("quickYear").value);
+    const targetMonth = Number($("quickMonth").value);
+
+    if (!clinicId || !targetYear || targetYear < 2000 || targetYear > 2100) {
+      showMessage("Selecciona una clínica y un año válido.", "error");
+      return;
+    }
+
+    let previousYear = targetYear;
+    let previousMonth = targetMonth - 1;
+
+    if (previousMonth === 0) {
+      previousMonth = 12;
+      previousYear--;
+    }
+
+    $("quickCopyPrevious").disabled = true;
+
+    try {
+      const [previousResult, currentResult] = await Promise.all([
+        db.from("monthly_records").select("*")
+          .eq("clinic_id", clinicId)
+          .eq("year", previousYear)
+          .eq("month", previousMonth),
+        db.from("monthly_records").select("*")
+          .eq("clinic_id", clinicId)
+          .eq("year", targetYear)
+          .eq("month", targetMonth)
+      ]);
+
+      if (previousResult.error) throw previousResult.error;
+      if (currentResult.error) throw currentResult.error;
+
+      const currentRecords = currentResult.data || [];
+      const previousRecords = previousResult.data || [];
+
+      const mergedRecords = employees
+        .filter(e => e.active)
+        .map(employee =>
+          currentRecords.find(r => r.employee_id === employee.id) ||
+          previousRecords.find(r => r.employee_id === employee.id)
+        )
+        .filter(Boolean);
+
+      renderQuickTable(mergedRecords);
+
+      showMessage("Mes anterior cargado. Se han conservado los registros que ya existían en el mes seleccionado.");
+    } catch (error) {
+      showMessage("No se pudieron copiar los datos: " + error.message, "error");
+    } finally {
+      $("quickCopyPrevious").disabled = false;
+    }
+      }
+    async function saveQuickRecords() {
+    const clinicId = $("quickClinic").value;
+    const year = Number($("quickYear").value);
+    const month = Number($("quickMonth").value);
+    const rows = [...$("quickTable").querySelectorAll("[data-quick-row]")];
+
+    if (!clinicId || !year || year < 2000 || year > 2100 || !rows.length) {
+      showMessage("Primero selecciona una clínica, un año y carga los fisioterapeutas.", "error");
+      return;
+    }
+
+    const recordsToSave = [];
+
+    for (const row of rows) {
+            if (
+        row.dataset.quickExisting !== "true" &&
+        [...row.querySelectorAll("[data-quick-field]")].every(input => input.value.trim() === "")
+      ) {
+        continue;
+            }
+      const getValue = field => {
+        const value = Number(row.querySelector(`[data-quick-field="${field}"]`).value || 0);
+        return Number.isFinite(value) && value >= 0 ? value : null;
+      };
+
+      const therapy = getValue("therapy");
+      const classes = getValue("classes");
+      const objective = getValue("objective");
+      const hours = getValue("hours");
+
+      if ([therapy, classes, objective, hours].some(v => v === null)) {
+        showMessage("Revisa los importes y las horas: no pueden ser negativos.", "error");
+        return;
+      }
+
+      recordsToSave.push({
+        owner_id: currentUser.id,
+        clinic_id: clinicId,
+        employee_id: row.dataset.quickRow,
+        year,
+        month,
+        therapy_production: therapy,
+        group_classes_production: classes,
+        objective,
+        hours_worked: hours
+      });
+    }
+
+    $("quickSave").disabled = true;
+
+    try {
+      for (let i = 0; i < recordsToSave.length; i += 100) {
+        const batch = recordsToSave.slice(i, i + 100);
+        const { error } = await db
+          .from("monthly_records")
+          .upsert(batch, {
+            onConflict: "clinic_id,employee_id,year,month"
+          });
+
+        if (error) throw error;
+      }
+
+            $("filterMonth").value = String(month);
+      $("filterYear").value = String(year);
+      await loadRecords();
+      const saved = await db.from("monthly_records").select("*").eq("clinic_id", clinicId).eq("year", year).eq("month", month);
+      if (saved.error) throw saved.error;
+      renderQuickTable(saved.data || recordsToSave);
+      showMessage("Todos los registros se han guardado correctamente.");
+    } catch (error) {
+      showMessage("Error al guardar los registros: " + error.message, "error");
+    } finally {
+      $("quickSave").disabled = false;
+    }
+    }
+  async function loadRecords() {
+    const month = Number($("filterMonth").value);
+    const year = Number($("filterYear").value);
+    const {data, error} = await db.from("monthly_records").select("*").eq("month", month).eq("year", year).order("created_at", {ascending:false});
+    if (error) throw new Error("Error al cargar producción: " + error.message);
+    records = data || [];
+    renderRecords();
+  }
+  function renderRecords() {
+    const total = records.reduce((sum, r) => sum + Number(r.therapy_production || 0) + Number(r.group_classes_production || 0), 0);
+    $("periodTotal").textContent = euro(total);
+    $("recordCount").textContent = `${records.length} ${records.length === 1 ? "registro" : "registros"}`;
+    $("periodDetails").textContent = "Terapia y clases colectivas de todas las clínicas.";
+    if (!records.length) {
+      $("recordList").innerHTML = '<div class="empty">No hay producción registrada en este periodo.</div>';
+      return;
+    }
+    $("recordList").innerHTML = records.map(r => {
+      const clinic = clinics.find(c => c.id === r.clinic_id);
+      const employee = employees.find(e => e.id === r.employee_id);
+      const therapy = Number(r.therapy_production || 0);
+      const classes = Number(r.group_classes_production || 0);
+      const production = therapy + classes;
+      const objective = Number(r.objective || 0);
+      const percentage = objective > 0 ? (production / objective) * 100 : null;
+      return `<div class="item"><div>
+        <div class="item-name">${escapeHTML(employee?.full_name || "Fisioterapeuta")}</div>
+        <div class="item-sub">${escapeHTML(clinic?.name || "Clínica")}</div>
+        <div class="item-sub">Terapia: ${euro(therapy)} · Clases: ${euro(classes)}</div>
+        <div class="record-total">${euro(production)}</div>
+        <div class="item-sub">Objetivo: ${euro(objective)}${percentage === null ? "" : " · " + percentage.toFixed(1).replace(".", ",") + "% del objetivo"}</div>
+            </div><div class="item-actions"><button class="secondary" type="button" data-edit-record="${r.id}">Editar</button><button class="danger" type="button" data-delete-record="${r.id}">Eliminar</button></div></div>`;
+    }).join("");
+    document.querySelectorAll("[data-edit-record]").forEach(b => b.addEventListener("click", () => editRecord(b.dataset.editRecord)));
+        document.querySelectorAll("[data-delete-record]").forEach(b => b.addEventListener("click", () => deleteRecord(b.dataset.deleteRecord)));
+  }
+  $("recordForm").addEventListener("submit", async event => {
+    event.preventDefault();
+    const clinicId = $("recordClinic").value;
+    const employeeId = $("recordEmployee").value;
+    const year = Number($("recordYear").value);
+    const month = Number($("recordMonth").value);
+    if (!clinicId || !employeeId) {
+      showMessage("Selecciona una clínica y un fisioterapeuta.", "error");
+      return;
+    }
+    const record = {
+      owner_id: currentUser.id,
+      clinic_id: clinicId,
+      employee_id: employeeId,
+      year, month,
+      therapy_production: Number($("therapy").value || 0),
+      group_classes_production: Number($("classes").value || 0),
+      objective: Number($("objective").value || 0),
+      hours_worked: Number($("hours").value || 0)
+    };
+    $("recordSave").disabled = true;
+    try {
+      const result = editingRecordId
+        ? await db.from("monthly_records").update(record).eq("id", editingRecordId)
+        : await db.from("monthly_records").upsert(record, {onConflict:"clinic_id,employee_id,year,month"});
+      if (result.error) throw result.error;
+      resetRecordForm();
+      $("filterMonth").value = String(month);
+      $("filterYear").value = String(year);
+      await loadRecords();
+      showMessage("Producción guardada correctamente.");
+    } catch (error) {
+      showMessage("No se pudo guardar la producción: " + error.message, "error");
+    } finally {
+      $("recordSave").disabled = false;
+    }
+  });
+   async function deleteRecord(id) {
+    const record = records.find(item => item.id === id);
+    if (!record) return;
+
+    const employee = employees.find(e => e.id === record.employee_id);
+    const name = employee?.full_name || "este fisioterapeuta";
+
+    if (!confirm(`¿Seguro que quieres eliminar el registro de ${name}? Esta acción no se puede deshacer.`)) return;
+
+    try {
+      const { error } = await db
+        .from("monthly_records")
+        .delete()
+        .eq("id", id);
+
+      if (error) throw error;
+
+      await loadRecords();
+      showMessage("Registro eliminado correctamente.");
+    } catch (error) {
+      showMessage("No se pudo eliminar el registro: " + error.message, "error");
+    }
+   } 
+  function editRecord(id) {
+    const r = records.find(item => item.id === id);
+    if (!r) return;
+    editingRecordId = id;
+    $("recordClinic").value = r.clinic_id;
+    $("recordEmployee").value = r.employee_id;
+    $("recordMonth").value = String(r.month);
+    $("recordYear").value = r.year;
+    $("therapy").value = r.therapy_production;
+    $("classes").value = r.group_classes_production;
+    $("objective").value = r.objective;
+    $("hours").value = r.hours_worked;
+    $("recordFormTitle").textContent = "Editar producción mensual";
+    $("recordSave").textContent = "Guardar cambios";
+    $("recordCancel").hidden = false;
+    updateLiveTotal();
+    changePage("production");
+    window.scrollTo({top:0, behavior:"smooth"});
+  }
+  function resetRecordForm() {
+    editingRecordId = null;
+    $("recordForm").reset();
+    $("recordFormTitle").textContent = "Introducir producción mensual";
+    $("recordSave").textContent = "Guardar producción";
+    $("recordCancel").hidden = true;
+    updateLiveTotal();
+  }
+  $("recordCancel").addEventListener("click", resetRecordForm);
+  function updateLiveTotal() {
+    $("liveTotal").textContent = euro(Number($("therapy").value || 0) + Number($("classes").value || 0));
+  }
+  $("therapy").addEventListener("input", updateLiveTotal);
+  $("classes").addEventListener("input", updateLiveTotal);
+  $("filterButton").addEventListener("click", async () => {
+    try { await loadRecords(); } catch (error) { showMessage(error.message, "error"); }
+  });
+    $("quickLoad").addEventListener("click", loadQuickRecords);
+    $("quickCopyPrevious").addEventListener("click", copyQuickPreviousMonth);
+    $("quickSave").addEventListener("click", saveQuickRecords);
+    $("quickTable").addEventListener("input", event => {
+    const row = event.target.closest("[data-quick-row]");
+    if (!row) return;
+
+    const therapy = Number(row.querySelector('[data-quick-field="therapy"]').value || 0);
+    const classes = Number(row.querySelector('[data-quick-field="classes"]').value || 0);
+
+    row.querySelector("[data-quick-total]").textContent = euro(therapy + classes);
+  });
+
+  const monthNames = ["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"];
+  function fillStatsFilters() {
+    const years = [...new Set([new Date().getFullYear(), ...statsRecords.map(r => Number(r.year))])].sort((a,b) => b-a);
+    const yearValue = $("statsYear").value;
+    const compareValue = $("statsCompareYear").value;
+    const yearOptions = years.map(y => `<option value="${y}">${y}</option>`).join("");
+    $("statsYear").innerHTML = yearOptions;
+    $("statsCompareYear").innerHTML = '<option value="">Sin comparación</option>' + yearOptions;
+    $("statsYear").value = years.includes(Number(yearValue)) ? yearValue : String(years[0]);
+    $("statsCompareYear").value = years.includes(Number(compareValue)) ? compareValue : "";
+    const clinicValue = $("statsClinic").value;
+    $("statsClinic").innerHTML = '<option value="">Todas las clínicas</option>' + clinics.map(c => `<option value="${c.id}">${escapeHTML(c.name)}</option>`).join("");
+    $("statsClinic").value = clinicValue;
+    const selected = [...$("statsEmployees").selectedOptions].map(o => o.value);
+    $("statsEmployees").innerHTML = employees.map(e => `<option value="${e.id}">${escapeHTML(e.full_name)}</option>`).join("");
+    [...$("statsEmployees").options].forEach(o => o.selected = selected.includes(o.value));
+  }
+  async function loadStatistics() {
+    const {data,error} = await db.from("monthly_records").select("*").order("year",{ascending:true}).order("month",{ascending:true});
+    if (error) throw new Error(error.message);
+    statsRecords = data || [];
+    fillStatsFilters();
+    renderStatistics();
+  }
+  function filteredStats(year) {
+    const clinicId = $("statsClinic").value;
+    const employeeIds = [...$("statsEmployees").selectedOptions].map(o => o.value);
+    return statsRecords.filter(r => Number(r.year) === Number(year) && (!clinicId || r.clinic_id === clinicId) && (!employeeIds.length || employeeIds.includes(r.employee_id)));
+  }
+  function sumStats(rows) {
+    return rows.reduce((a,r) => { a.therapy += Number(r.therapy_production||0); a.classes += Number(r.group_classes_production||0); a.objective += Number(r.objective||0); a.hours += Number(r.hours_worked||0); a.total += Number(r.therapy_production||0)+Number(r.group_classes_production||0); return a; }, {therapy:0,classes:0,objective:0,hours:0,total:0});
+  }
+  function monthlyTotals(rows) {
+    // null = mes sin registros (hueco en la gráfica); 0 = hay registros y suman 0
+    return monthNames.map((_,i) => { const r = rows.filter(x => Number(x.month) === i+1); return r.length ? r.reduce((v,x)=>v+Number(x.therapy_production||0)+Number(x.group_classes_production||0),0) : null; });
+  }
+  function gapPath(arr, x, y) {
+    let d = "", pen = false;
+    arr.forEach((v,i) => { if (v === null) { pen = false; return; } d += (pen ? "L" : "M") + x(i) + "," + y(v) + " "; pen = true; });
+    return d.trim();
+  }
+  function svgLineChart(mainRows, compareRows) {
+    const main = monthlyTotals(mainRows);
+    const compare = compareRows ? monthlyTotals(compareRows) : null;
+    const max = Math.max(1,...main.filter(v=>v!==null),...(compare||[]).filter(v=>v!==null)); const W=720,H=280,L=80,R=20,T=18,B=44;
+    const x=i=>L+i*(W-L-R)/11, y=v=>H-B-(v/max)*(H-T-B);
+    const grid = [0,.25,.5,.75,1].map(f=>{const yy=y(max*f);return `<line x1="${L}" y1="${yy}" x2="${W-R}" y2="${yy}" stroke="#e5ebe7"/><text x="${L-8}" y="${yy+4}" text-anchor="end" font-size="12" fill="#78847e">${Math.round(max*f).toLocaleString("es-ES")}</text>`}).join("");
+    const dots = (arr,color)=>arr.map((v,i)=>v===null?"":`<circle cx="${x(i)}" cy="${y(v)}" r="5" fill="${color}"/>`).join("");
+    const labels=monthNames.map((m,i)=>`<text x="${x(i)}" y="${H-14}" text-anchor="middle" font-size="12" fill="#78847e">${m}</text>`).join("");
+    return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Gráfico de evolución mensual">${grid}<path d="${gapPath(main,x,y)}" fill="none" stroke="#173f35" stroke-width="3" stroke-linejoin="round"/>${dots(main,"#173f35")}${compare?`<path d="${gapPath(compare,x,y)}" fill="none" stroke="#d6b65c" stroke-width="3" stroke-linejoin="round"/>${dots(compare,"#d6b65c")}`:""}${labels}</svg>`;
+  }
+  function renderCategoryChart(t) {
+    const total=t.therapy+t.classes;
+    if (!total) return '<div class="empty">No hay producción para los filtros seleccionados.</div>';
+    const p1=t.therapy/total*100, p2=t.classes/total*100;
+    return `<div style="height:16px;display:flex;border-radius:10px;overflow:hidden;background:#edf1ee;margin:18px 0"><span style="width:${p1}%;background:#173f35"></span><span style="width:${p2}%;background:#d6b65c"></span></div><p><strong>Terapia:</strong> ${euro(t.therapy)} · ${p1.toFixed(1).replace(".",",")}%</p><p><strong>Clases colectivas:</strong> ${euro(t.classes)} · ${p2.toFixed(1).replace(".",",")}%</p>`;
+  }
+  function renderEmployeeChart(rows) {
+    const totals = new Map();
+    rows.forEach(r=>totals.set(r.employee_id,(totals.get(r.employee_id)||0)+Number(r.therapy_production||0)+Number(r.group_classes_production||0)));
+    const list=[...totals.entries()].map(([id,total])=>({name:employees.find(e=>e.id===id)?.full_name||"Fisioterapeuta",total})).sort((a,b)=>b.total-a.total);
+    if(!list.length) return '<div class="empty">No hay registros para este año.</div>';
+    const max=Math.max(1,...list.map(x=>x.total));
+    return list.map((x,i)=>`<div style="margin:12px 0"><div style="display:flex;justify-content:space-between;gap:8px;font-size:13px"><strong>${i+1}. ${escapeHTML(x.name)}</strong><span>${euro(x.total)}</span></div><div class="stat-bar"><span style="width:${x.total/max*100}%"></span></div></div>`).join("");
+  }
+  function renderStatistics() {
+    const year=Number($("statsYear").value), compareYear=$("statsCompareYear").value;
+    const rows=filteredStats(year), totals=sumStats(rows), compareRows=compareYear?filteredStats(Number(compareYear)):null, compareTotals=compareRows?sumStats(compareRows):null;
+    $("statProduction").textContent=euro(totals.total);
+    $("statObjective").textContent=euro(totals.objective);
+    renderCompare();
+    $("monthlyChart").innerHTML=svgLineChart(rows,compareRows);
+    $("compareLegend").hidden=!compareRows;
+    $("categoryChart").innerHTML=renderCategoryChart(totals);
+    $("employeeChart").innerHTML=renderEmployeeChart(rows);
+    if(compareTotals){const diff=totals.total-compareTotals.total;const pct=compareTotals.total>0?diff/compareTotals.total*100:null;$("annualComparisonText").textContent=`Comparación de ${year} frente a ${compareYear}.`;$("annualComparison").innerHTML=`<div class="grid"><div><div class="item-sub">${year}</div><div class="record-total">${euro(totals.total)}</div></div><div><div class="item-sub">${compareYear}</div><div class="record-total">${euro(compareTotals.total)}</div></div></div><p><strong>Diferencia:</strong> ${diff>=0?"+":"−"}${euro(Math.abs(diff))}${pct===null?"":" ("+(pct>=0?"+":"")+pct.toFixed(1).replace(".",",")+"%)"}</p>`;}else{$("annualComparisonText").textContent=`Resumen de ${year}. Selecciona otro año para comparar.`;$("annualComparison").innerHTML=`<p><strong>Terapia:</strong> ${euro(totals.therapy)} · <strong>Clases colectivas:</strong> ${euro(totals.classes)}</p><p><strong>Horas trabajadas:</strong> ${totals.hours.toLocaleString("es-ES")}</p>`;}
+  }
+
+  // ---- Comparativa multi-serie ----
+  const CMP_COLORS=["#173f35","#d6b65c","#2f7fb8","#c0504d","#7b5ea7"];
+  let cmpSelected=[], cmpModeUsed=null;
+  function cmpValue(r,metric){const t=Number(r.therapy_production||0),c=Number(r.group_classes_production||0);return metric==="therapy"?t:metric==="classes"?c:t+c;}
+  const MONTH_FULL=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+  function cmpOptions(mode){
+    if(mode==="months") return MONTH_FULL.map((n,i)=>({id:String(i+1),label:n}));
+    if(mode==="years") return [...new Set(statsRecords.map(r=>Number(r.year)))].sort((a,b)=>b-a).map(y=>({id:String(y),label:String(y)}));
+    if(mode==="employees") return employees.map(e=>({id:e.id,label:e.full_name}));
+    return clinics.map(c=>({id:c.id,label:c.name}));
+  }
+  function cmpRows(mode,id){
+    const clinicId=$("statsClinic").value, empIds=[...$("statsEmployees").selectedOptions].map(o=>o.value), year=Number($("statsYear").value);
+    return statsRecords.filter(r=>{
+      if(mode==="years") return Number(r.year)===Number(id)&&(!clinicId||r.clinic_id===clinicId)&&(!empIds.length||empIds.includes(r.employee_id));
+      if(mode==="employees") return Number(r.year)===year&&r.employee_id===id&&(!clinicId||r.clinic_id===clinicId);
+      return Number(r.year)===year&&r.clinic_id===id&&(!empIds.length||empIds.includes(r.employee_id));
+    });
+  }
+  function renderCompare(){
+    const mode=$("cmpMode").value, metric=$("cmpMetric").value, opts=cmpOptions(mode);
+    if(cmpModeUsed!==mode){cmpModeUsed=mode;
+      if(mode==="months"){const y=Number($("statsYear").value);const have=[...new Set(statsRecords.filter(r=>Number(r.year)===y).map(r=>Number(r.month)))].sort((a,b)=>a-b);cmpSelected=have.slice(-3).map(String);}
+      else cmpSelected=opts.slice(0,3).map(o=>o.id);}
+    cmpSelected=cmpSelected.filter(id=>opts.some(o=>o.id===id));
+    $("cmpChips").innerHTML=opts.map(o=>{const i=cmpSelected.indexOf(o.id);const on=i>=0;return `<label class="${on?"on":""}"><input type="checkbox" value="${escapeHTML(o.id)}" ${on?"checked":""}>${on?`<i style="background:${CMP_COLORS[i]}"></i>`:""}${escapeHTML(o.label)}</label>`}).join("")||'<div class="empty">Sin datos todavía.</div>';
+    $("cmpChips").querySelectorAll("input").forEach(inp=>inp.addEventListener("change",()=>{
+      if(inp.checked){ if(cmpSelected.length>=5){inp.checked=false;showMessage("Máximo 5 series en la gráfica.","error");return;} cmpSelected.push(inp.value);} else cmpSelected=cmpSelected.filter(x=>x!==inp.value);
+      renderCompare();}));
+    $("cmpScope").textContent=mode==="months"?"Compara los meses elegidos del año principal. Usa la clínica y los fisioterapeutas de los filtros. Un mes sin registros se muestra como «sin datos», no como 0.":mode==="years"?"Usa la clínica y los fisioterapeutas elegidos en los filtros.":mode==="employees"?"Usa el año y la clínica elegidos en los filtros.":"Usa el año y los fisioterapeutas elegidos en los filtros.";
+    if(mode==="months"){
+      const y=Number($("statsYear").value), clinicId=$("statsClinic").value, empSel=[...$("statsEmployees").selectedOptions].map(o=>o.value);
+      const emps=(empSel.length?employees.filter(e=>empSel.includes(e.id)):employees);
+      const base=statsRecords.filter(r=>Number(r.year)===y&&(!clinicId||r.clinic_id===clinicId));
+      const cats=[{label:"Total",ids:null},...emps.map(e=>({label:e.full_name,ids:[e.id]}))];
+      const ms=cmpSelected.slice().sort((a,b)=>a-b).map((id,i)=>({id,label:MONTH_FULL[Number(id)-1],color:CMP_COLORS[cmpSelected.indexOf(id)]}));
+      if(!ms.length){$("cmpChart").innerHTML='<div class="empty">Elige al menos un mes.</div>';$("cmpLegend").innerHTML="";$("cmpTable").innerHTML="";return;}
+      const val=(cat,m)=>{const rows=base.filter(r=>Number(r.month)===Number(m.id)&&(!cat.ids||cat.ids.includes(r.employee_id)));return rows.length?rows.reduce((v,r)=>v+cmpValue(r,metric),0):null;};
+      const data=cats.map(c=>ms.map(m=>val(c,m)));
+      const max=Math.max(1,...data.flat().filter(v=>v!==null));
+      const W=720,step=24,rowH=34+step*ms.length,H=cats.length*rowH+10,L=10,R=110,aw=W-L-R;
+      const bar=(c,ci)=>ms.map((m,mi)=>{const v=data[ci][mi];const yy=ci*rowH+32+mi*step;if(v===null)return `<text x="${L+4}" y="${yy+15}" font-size="16" fill="#9aa5a0">${m.label.slice(0,3)}: sin datos</text>`;const w=Math.max(2,v/max*aw);return `<rect x="${L}" y="${yy}" width="${w}" height="18" rx="4" fill="${m.color}"/><text x="${L+w+8}" y="${yy+15}" font-size="16" fill="#26332e">${Math.round(v).toLocaleString("es-ES")}</text>`}).join("");
+      $("cmpChart").innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Comparativa de meses por fisioterapeuta">${cats.map((c,ci)=>`<text x="${L}" y="${ci*rowH+22}" font-size="18" font-weight="700" fill="#26332e">${escapeHTML(c.label)}</text>`+bar(c,ci)).join("")}</svg>`;
+      $("cmpLegend").innerHTML=ms.map(m=>`<span style="--c:${m.color}">${m.label} ${y}</span>`).join("");
+      const tot=data[0];const first=tot.find(v=>v!==null);
+      $("cmpTable").innerHTML=ms.map((m,i)=>{const v=tot[i];const d=(v!==null&&first&&first>0&&i>0&&tot[0]!==null)?` <small style="color:${v>=tot[0]?"#245b39":"#a33"}">${(v-tot[0])/tot[0]>=0?"+":""}${(((v-tot[0])/tot[0])*100).toFixed(1).replace(".",",")}% vs ${ms[0].label}</small>`:"";return `<div class="cmp-row" style="--c:${m.color}"><span>${m.label}</span><strong>${v===null?"sin datos":euro(v)}${d}</strong></div>`;}).join("");
+      return;
+    }
+    const series=cmpSelected.map((id,i)=>{const rows=cmpRows(mode,id);const vals=monthNames.map((_,m)=>{const mr=rows.filter(r=>Number(r.month)===m+1);return mr.length?mr.reduce((v,r)=>v+cmpValue(r,metric),0):null;});return {id,label:opts.find(o=>o.id===id).label,color:CMP_COLORS[i],vals,total:vals.every(v=>v===null)?null:vals.reduce((a,b)=>a+(b||0),0)};});
+    if(!series.length){$("cmpChart").innerHTML='<div class="empty">Elige al menos una serie.</div>';$("cmpLegend").innerHTML="";$("cmpTable").innerHTML="";return;}
+    const W=720,H=300,L=80,R=20,T=18,B=44, max=Math.max(1,...series.flatMap(s=>s.vals.filter(v=>v!==null)));
+    const x=i=>L+i*(W-L-R)/11, y=v=>H-B-(v/max)*(H-T-B);
+    const grid=[0,.25,.5,.75,1].map(f=>{const yy=y(max*f);return `<line x1="${L}" y1="${yy}" x2="${W-R}" y2="${yy}" stroke="#e5ebe7"/><text x="${L-8}" y="${yy+4}" text-anchor="end" font-size="12" fill="#78847e">${Math.round(max*f).toLocaleString("es-ES")}</text>`}).join("");
+    const labels=monthNames.map((m,i)=>`<text x="${x(i)}" y="${H-14}" text-anchor="middle" font-size="12" fill="#78847e">${m}</text>`).join("");
+    const lines=series.map(s=>`<path d="${gapPath(s.vals,x,y)}" fill="none" stroke="${s.color}" stroke-width="3" stroke-linejoin="round"/>`+s.vals.map((v,i)=>v===null?"":`<circle cx="${x(i)}" cy="${y(v)}" r="4" fill="${s.color}"/>`).join("")).join("");
+    $("cmpChart").innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Comparativa de series por mes">${grid}${lines}${labels}</svg>`;
+    $("cmpLegend").innerHTML=series.map(s=>`<span style="--c:${s.color}">${escapeHTML(s.label)}</span>`).join("");
+    $("cmpTable").innerHTML=series.map(s=>`<div class="cmp-row" style="--c:${s.color}"><span>${escapeHTML(s.label)}</span><strong>${s.total===null?"sin datos":euro(s.total)}</strong></div>`).join("");
+  }
+  ["cmpMode","cmpMetric"].forEach(id=>$(id).addEventListener("change",renderCompare));
+
+  $("quickTable").addEventListener("click", async event => {
+    const btn = event.target.closest("[data-quick-delete]");
+    if (!btn) return;
+    const name = btn.dataset.quickName || "este fisioterapeuta";
+    const month = $("quickMonth").selectedOptions[0]?.textContent || "";
+    if (!confirm(`¿Seguro que quieres eliminar el registro de ${name} de ${month} ${$("quickYear").value}? Esta acción no se puede deshacer.`)) return;
+    btn.disabled = true;
+    try {
+      const { error } = await db.from("monthly_records").delete().eq("id", btn.dataset.quickDelete);
+      if (error) throw error;
+      const row = btn.closest("[data-quick-row]");
+      row.dataset.quickExisting = "false";
+      row.querySelectorAll("[data-quick-field]").forEach(i => i.value = "");
+      row.querySelector("[data-quick-total]").textContent = euro(0);
+      btn.remove();
+      showMessage("Registro eliminado correctamente.");
+    } catch (error) {
+      btn.disabled = false;
+      showMessage("No se pudo eliminar el registro: " + error.message, "error");
+    }
+  });
+  ["statsYear","statsCompareYear","statsClinic","statsEmployees"].forEach(id=>$(id).addEventListener("change",renderStatistics));
+  $("refreshStats").addEventListener("click",async()=>{try{await loadStatistics();showMessage("Estadísticas actualizadas.");}catch(error){showMessage("No se pudieron actualizar las estadísticas: "+error.message,"error");}});
+async function fetchAllOwnedRows(table) {
+  const pageSize = 1000;
+  let from = 0;
+  const allRows = [];
+
+  while (true) {
+    const { data, error } = await db
+      .from(table)
+      .select("*")
+      .eq("owner_id", currentUser.id)
+      .order("created_at", { ascending: true })
+      .range(from, from + pageSize - 1);
+
+    if (error) throw error;
+
+    allRows.push(...(data || []));
+
+    if (!data || data.length < pageSize) break;
+    from += pageSize;
+  }
+
+  return allRows;
+}
+
+  function excelSheet(workbook, name, headers, rows, widths) {
+  const sheet = XLSX.utils.json_to_sheet(rows, { header: headers });
+    const labels = {
+  clinic: "Clínica",
+  address: "Dirección",
+  active: "Activa",
+  year: "Año",
+  month: "Mes",
+  monthNumber: "Número de mes",
+  physiotherapist: "Fisioterapeuta",
+  therapy: "Terapia (€)",
+  groupClasses: "Clases colectivas (€)",
+  total: "Producción total (€)",
+  objective: "Objetivo (€)",
+  achievement: "Cumplimiento (%)",
+  hours: "Horas trabajadas",
+  productionPerHour: "Producción por hora (€)",
+  records: "N.º de registros"
+};
+
+XLSX.utils.sheet_add_aoa(
+  sheet,
+  [headers.map(h => labels[h] || h)],
+  { origin: "A1" }
+);
+
+  sheet["!cols"] = widths.map(width => ({ wch: width }));
+
+  const lastColumn = XLSX.utils.encode_col(headers.length - 1);
+  const lastRow = Math.max(1, rows.length + 1);
+
+  sheet["!autofilter"] = {
+    ref: `A1:${lastColumn}${lastRow}`
+  };
+
+  XLSX.utils.book_append_sheet(workbook, sheet, name);
+}
+
+$("exportExcel").addEventListener("click", async () => {
+  const button = $("exportExcel");
+
+  try {
+    button.disabled = true;
+    button.textContent = "Preparando Excel...";
+
+    if (!window.XLSX) {
+      throw new Error("No se ha podido cargar la biblioteca de Excel. Recarga la aplicación y vuelve a intentarlo.");
+    }
+
+    const [clinicRows, employeeRows, recordRows] = await Promise.all([
+      fetchAllOwnedRows("clinics"),
+      fetchAllOwnedRows("employees"),
+      fetchAllOwnedRows("monthly_records")
+    ]);
+
+    const clinicMap = new Map(clinicRows.map(c => [c.id, c]));
+    const employeeMap = new Map(employeeRows.map(e => [e.id, e]));
+
+    const months = [
+      "Enero", "Febrero", "Marzo", "Abril",
+      "Mayo", "Junio", "Julio", "Agosto",
+      "Septiembre", "Octubre", "Noviembre", "Diciembre"
+    ];
+
+    const detail = recordRows.map(r => {
+      const clinic = clinicMap.get(r.clinic_id);
+      const employee = employeeMap.get(r.employee_id);
+
+      const therapy = Number(r.therapy_production || 0);
+      const classes = Number(r.group_classes_production || 0);
+      const total = therapy + classes;
+      const objective = Number(r.objective || 0);
+      const hours = Number(r.hours_worked || 0);
+
+      return {
+        clinic: clinic?.name || "Clínica no encontrada",
+        year: Number(r.year),
+        monthNumber: Number(r.month),
+        month: months[Number(r.month) - 1] || "",
+        physiotherapist: employee?.full_name || "Fisioterapeuta no encontrado",
+        therapy,
+        groupClasses: classes,
+        total,
+        objective,
+        achievement: objective > 0 ? total / objective * 100 : null,
+        hours,
+        productionPerHour: hours > 0 ? total / hours : null
+      };
+    });
+
+    detail.sort((a, b) =>
+      a.clinic.localeCompare(b.clinic, "es") ||
+      a.year - b.year ||
+      a.monthNumber - b.monthNumber ||
+      a.physiotherapist.localeCompare(b.physiotherapist, "es")
+    );
+
+    const clinicSummary = new Map();
+    const employeeSummary = new Map();
+
+    detail.forEach(r => {
+      const clinicKey = [
+        r.clinic, r.year, r.monthNumber
+      ].join("|");
+
+      if (!clinicSummary.has(clinicKey)) {
+        clinicSummary.set(clinicKey, {
+          clinic: r.clinic,
+          year: r.year,
+          monthNumber: r.monthNumber,
+          month: r.month,
+          therapy: 0,
+          groupClasses: 0,
+          total: 0,
+          objective: 0,
+          hours: 0,
+          records: 0
+        });
+      }
+
+      const c = clinicSummary.get(clinicKey);
+      c.therapy += r.therapy;
+      c.groupClasses += r.groupClasses;
+      c.total += r.total;
+      c.objective += r.objective;
+      c.hours += r.hours;
+      c.records++;
+
+      const employeeKey = [
+        r.clinic, r.physiotherapist, r.year, r.monthNumber
+      ].join("|");
+
+      if (!employeeSummary.has(employeeKey)) {
+        employeeSummary.set(employeeKey, {
+          clinic: r.clinic,
+          physiotherapist: r.physiotherapist,
+          year: r.year,
+          monthNumber: r.monthNumber,
+          month: r.month,
+          therapy: 0,
+          groupClasses: 0,
+          total: 0,
+          objective: 0,
+          hours: 0,
+          records: 0
+        });
+      }
+
+      const e = employeeSummary.get(employeeKey);
+      e.therapy += r.therapy;
+      e.groupClasses += r.groupClasses;
+      e.total += r.total;
+      e.objective += r.objective;
+      e.hours += r.hours;
+      e.records++;
+    });
+
+    const clinicTotals = [...clinicSummary.values()]
+      .map(r => ({
+        ...r,
+        achievement: r.objective > 0 ? r.total / r.objective * 100 : null,
+        productionPerHour: r.hours > 0 ? r.total / r.hours : null
+      }))
+      .sort((a, b) =>
+        a.clinic.localeCompare(b.clinic, "es") ||
+        a.year - b.year ||
+        a.monthNumber - b.monthNumber
+      );
+
+    const employeeTotals = [...employeeSummary.values()]
+      .map(r => ({
+        ...r,
+        achievement: r.objective > 0 ? r.total / r.objective * 100 : null,
+        productionPerHour: r.hours > 0 ? r.total / r.hours : null
+      }))
+      .sort((a, b) =>
+        a.clinic.localeCompare(b.clinic, "es") ||
+        a.physiotherapist.localeCompare(b.physiotherapist, "es") ||
+        a.year - b.year ||
+        a.monthNumber - b.monthNumber
+      );
+
+    const workbook = XLSX.utils.book_new();
+
+    excelSheet(
+      workbook,
+      "Resumen clínicas",
+      ["clinic", "year", "month", "therapy", "groupClasses", "total", "objective", "achievement", "hours", "productionPerHour", "records"],
+      clinicTotals,
+      [28, 10, 15, 16, 18, 16, 16, 16, 12, 20, 12]
+    );
+
+    excelSheet(
+      workbook,
+      "Resumen fisioterapeutas",
+      ["clinic", "physiotherapist", "year", "month", "therapy", "groupClasses", "total", "objective", "achievement", "hours", "productionPerHour", "records"],
+      employeeTotals,
+      [26, 28, 10, 15, 16, 18, 16, 16, 16, 12, 20, 12]
+    );
+
+    excelSheet(
+      workbook,
+      "Detalle producción",
+      ["clinic", "year", "monthNumber", "month", "physiotherapist", "therapy", "groupClasses", "total", "objective", "achievement", "hours", "productionPerHour"],
+      detail,
+      [26, 10, 12, 15, 28, 16, 18, 16, 16, 16, 12, 20]
+    );
+
+    const clinicsForExcel = clinicRows
+      .map(c => ({
+        clinic: c.name,
+        address: c.address || "",
+        active: c.active ? "Sí" : "No"
+      }))
+      .sort((a, b) => a.clinic.localeCompare(b.clinic, "es"));
+
+    excelSheet(
+      workbook,
+      "Clínicas",
+      ["clinic", "address", "active"],
+      clinicsForExcel,
+      [30, 40, 12]
+    );
+
+    const employeesForExcel = employeeRows
+      .map(e => ({
+        physiotherapist: e.full_name,
+        active: e.active ? "Sí" : "No"
+      }))
+      .sort((a, b) => a.physiotherapist.localeCompare(b.physiotherapist, "es"));
+
+    excelSheet(
+      workbook,
+      "Fisioterapeutas",
+      ["physiotherapist", "active"],
+      employeesForExcel,
+      [35, 12]
+    );
+
+    const now = new Date();
+    const pad = value => String(value).padStart(2, "0");
+
+    const timestamp =
+      now.getFullYear() + "-" +
+      pad(now.getMonth() + 1) + "-" +
+      pad(now.getDate()) + "_" +
+      pad(now.getHours()) + "-" +
+      pad(now.getMinutes()) + "-" +
+      pad(now.getSeconds());
+
+    XLSX.writeFile(
+      workbook,
+      "Productividad_FAMED_" + timestamp + ".xlsx"
+    );
+
+    alert("Excel exportado correctamente.");
+  } catch (error) {
+    alert("No se pudo exportar el Excel: " + error.message);
+  } finally {
+    button.disabled = false;
+    button.textContent = "Exportar datos a Excel";
+  }
+});
+$("createBackup").addEventListener("click", async () => {
+  const button = $("createBackup");
+
+  try {
+    button.disabled = true;
+    button.textContent = "Preparando copia...";
+
+    const backup = {
+      app: "Productividad FAMED",
+      format_version: 1,
+      exported_at: new Date().toISOString(),
+      clinics: await fetchAllOwnedRows("clinics"),
+      employees: await fetchAllOwnedRows("employees"),
+      monthly_records: await fetchAllOwnedRows("monthly_records")
+    };
+
+    const blob = new Blob(
+      [JSON.stringify(backup, null, 2)],
+      { type: "application/json" }
+    );
+
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    const date = new Date().toISOString().slice(0, 10);
+
+    link.href = url;
+    link.download = "productividad-famed-copia-" + date + ".json";
+
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+
+    alert("Copia de seguridad descargada correctamente.");
+  } catch (error) {
+    alert("No se pudo crear la copia: " + error.message);
+  } finally {
+    button.disabled = false;
+    button.textContent = "Descargar copia de seguridad";
+  }
+});
+$("restoreBackup").addEventListener("click", async () => {
+  const fileInput = $("backupFile");
+  const button = $("restoreBackup");
+  const file = fileInput.files[0];
+
+  if (!file) {
+    alert("Selecciona primero un archivo de copia de seguridad.");
+    return;
+  }
+
+  if (!confirm(
+    "¿Quieres restaurar esta copia? Los datos se incorporarán a los actuales, sin borrar los que ya existen."
+  )) return;
+
+  try {
+    button.disabled = true;
+    button.textContent = "Restaurando...";
+
+    const backup = JSON.parse(await file.text());
+
+    if (
+      backup.app !== "Productividad FAMED" ||
+      backup.format_version !== 1 ||
+      !Array.isArray(backup.clinics) ||
+      !Array.isArray(backup.employees) ||
+      !Array.isArray(backup.monthly_records)
+    ) {
+      throw new Error("El archivo no tiene un formato de copia válido.");
+    }
+
+    const clinics = backup.clinics.map(row => ({
+      ...row,
+      owner_id: currentUser.id
+    }));
+
+    const employees = backup.employees.map(row => ({
+      ...row,
+      owner_id: currentUser.id
+    }));
+
+    const clinicIds = new Set(clinics.map(row => row.id));
+    const employeeIds = new Set(employees.map(row => row.id));
+
+    const seenRecords = new Set();
+
+    const records = backup.monthly_records.map(row => {
+      if (
+        !row.id ||
+        !clinicIds.has(row.clinic_id) ||
+        !employeeIds.has(row.employee_id) ||
+        !Number.isInteger(Number(row.year)) ||
+        !Number.isInteger(Number(row.month)) ||
+        Number(row.month) < 1 ||
+        Number(row.month) > 12
+      ) {
+        throw new Error("La copia contiene un registro incompleto o con referencias incorrectas.");
+      }
+
+      const key = [
+        row.clinic_id,
+        row.employee_id,
+        row.year,
+        row.month
+      ].join("|");
+
+      if (seenRecords.has(key)) {
+        throw new Error("La copia contiene registros mensuales duplicados.");
+      }
+
+      seenRecords.add(key);
+
+      const cleanRow = { ...row, owner_id: currentUser.id };
+      delete cleanRow.production;
+
+      return cleanRow;
+    });
+
+    async function importRows(table, rows, conflict) {
+      for (let i = 0; i < rows.length; i += 100) {
+        const batch = rows.slice(i, i + 100);
+
+        const { error } = await db
+          .from(table)
+          .upsert(batch, { onConflict: conflict });
+
+        if (error) throw error;
+      }
+    }
+
+    await importRows("clinics", clinics, "id");
+    await importRows("employees", employees, "id");
+    await importRows(
+      "monthly_records",
+      records,
+      "clinic_id,employee_id,year,month"
+    );
+
+    await loadAll();
+
+    fileInput.value = "";
+
+    alert("Restauración completada correctamente.");
+  } catch (error) {
+    alert("No se pudo restaurar la copia: " + error.message);
+  } finally {
+    button.disabled = false;
+    button.textContent = "Restaurar datos";
+  }
+});
+  
+  async function boot() {
+    try {
+      initializeSupabase();
+      const now = new Date();
+      $("recordMonth").value = String(now.getMonth() + 1);
+      $("recordYear").value = String(now.getFullYear());
+      $("filterMonth").value = String(now.getMonth() + 1);
+      $("filterYear").value = String(now.getFullYear());
+      $("quickMonth").value = String(now.getMonth() + 1);
+$("quickYear").value = String(now.getFullYear());
+      updateLiveTotal();
+      await startApp();
+    } catch (error) {
+      showLogin();
+      loginMessage("Error al iniciar la aplicación: " + (error.message || String(error)), true);
+    }
+  }
+
+  db = null;
+  boot();
+
+  window.addEventListener("unhandledrejection", event => {
+    const message = event.reason && event.reason.message ? event.reason.message : String(event.reason || "Error desconocido");
+    if (!$("app").hidden) showMessage("Se ha producido un error: " + message, "error");
+    else loginMessage("Se ha producido un error: " + message, true);
+  });
+})();
+</script>
+<script>
+if(window.matchMedia("(max-width:760px)").matches){const f=document.getElementById("filtersPanel");if(f)f.removeAttribute("open");}
+if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));}
+</script>
+</body>
+</html>
